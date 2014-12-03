@@ -1,4 +1,5 @@
 gradle
-buid
+out
 .idea
+.gradle
 **/*.iml
