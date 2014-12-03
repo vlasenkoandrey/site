@@ -1,0 +1,6 @@
+rootProject.name = 'site'
+
+include 'core'
+
+include 'web'
+
