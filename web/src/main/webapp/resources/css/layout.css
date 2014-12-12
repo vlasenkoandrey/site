@@ -1,0 +1,53 @@
+/* Style for our header texts
+	* --------------------------------------- */
+h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #000000;
+    margin:0;
+    padding:0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#subsection1,
+#subsection2{
+    background-size: cover;
+}
+
+/* Defining each section background and styles
+* --------------------------------------- */
+#section0{
+    background-image: url("../img/31_seamless_background.jpg");
+    background-repeat: repeat;
+}
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1{
+    background-image: url("../img/back_repeat_1.jpg");
+    background-repeat: repeat;
+}
+#slide2{
+    background-image: url("../img/daisy-grass-repeating-background.jpg");
+    background-repeat: repeat;
+}
+#slide3{
+    background-image: url("../img/4-old-brick-background-sml.jpg");
+    background-repeat: repeat;
+}
+
+.fullPage-slidesNav.bottom{
+    bottom: 25px;
+}
+
+

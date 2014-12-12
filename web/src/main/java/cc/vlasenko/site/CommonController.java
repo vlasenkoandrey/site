@@ -8,6 +8,6 @@ public class CommonController {
 
     @RequestMapping("/index.jsp")
     public String getLayout() {
-        return "index";
+        return "layout";
     }
 }
