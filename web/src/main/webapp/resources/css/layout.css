@@ -8,46 +8,39 @@ h1{
     padding:0;
 }
 
-/* Centered texts in each section
-* --------------------------------------- */
-.section{
-    text-align:center;
+.section {
+    text-align: center;
 }
 
-
-/* Backgrounds will cover all the section
-* --------------------------------------- */
-#section0,
-#section1,
-#subsection1,
-#subsection2{
-    background-size: cover;
+h2{
+    font-size: 2em;
+    font-family: arial,helvetica;
+    color: #000000;
+    margin:0;
+    padding:0;
 }
 
 /* Defining each section background and styles
 * --------------------------------------- */
-#section0{
-    background-image: url("../img/31_seamless_background.jpg");
-    background-repeat: repeat;
-}
-
-/*Adding background for the slides
-* --------------------------------------- */
-#slide1{
-    background-image: url("../img/back_repeat_1.jpg");
-    background-repeat: repeat;
-}
-#slide2{
-    background-image: url("../img/daisy-grass-repeating-background.jpg");
-    background-repeat: repeat;
-}
+#section0,
+#section2,
+#slide1,
+#slide2,
 #slide3{
-    background-image: url("../img/4-old-brick-background-sml.jpg");
+    background-image: url("../img/main_background.jpg");
     background-repeat: repeat;
 }
 
 .fullPage-slidesNav.bottom{
     bottom: 25px;
+}
+
+.TextBoxBg1, .TextBoxBg2 {
+    background-color: #514642;
+    border-radius: 14px; opacity:0.70;
+    filter:"alpha(opacity=70)";
+    -ms-filter:"alpha(opacity=70)";
+    position: absolute;
 }
 
 
