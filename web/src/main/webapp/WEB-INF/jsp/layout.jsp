@@ -25,12 +25,6 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $(".contentBox1, .contentBox2").mCustomScrollbar({
-                scrollButtons:{
-                    enable:true
-                },
-                theme:'dark'
-            });
             $('#fullpage').fullpage({
                 anchors: ['firstPage', 'secondPage', 'thirdPage'],
                 verticalCentered: true,
