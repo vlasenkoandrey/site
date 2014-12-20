@@ -57,7 +57,13 @@
         </div>
     </div>
     <div class="section" id="sectionTheStory">
-
+        <div id="storyDiv">
+            <script>
+                $(function(){
+                    $('#storyDiv').load("story.jsp");
+                });
+            </script>
+        </div>
     </div>
     <div class="section" id="sectionGallery">
 
