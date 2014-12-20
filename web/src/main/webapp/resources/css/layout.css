@@ -22,11 +22,12 @@ h2{
 
 /* Defining each section background and styles
 * --------------------------------------- */
-#section0,
-#section2,
-#slide1,
-#slide2,
-#slide3{
+#sectionWeAre,
+#sectionTheStory,
+#sectionGallery,
+#slidePolina,
+#slideUs,
+#slideAndrey{
     background-image: url("../img/main_background.jpg");
     background-repeat: repeat;
 }

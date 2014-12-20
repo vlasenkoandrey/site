@@ -26,7 +26,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['firstPage', 'secondPage', 'thirdPage'],
+                anchors: ['pageWeAre', 'pageTheStory', 'pageGallery', 'pageAbout'],
                 verticalCentered: true,
                 slidesNavigation: true,
                 loopHorizontal: false,
@@ -40,13 +40,14 @@
 </head>
 <body>
 <ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">We are</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">About us</a></li>
-    <li data-menuanchor="thirdPage"><a href="#thirdPage">Video</a></li>
+    <li data-menuanchor="pageWeAre" class="active"><a href="#pageWeAre">We are</a></li>
+    <li data-menuanchor="pageTheStory"><a href="#pageTheStory">The Story</a></li>
+    <li data-menuanchor="pageGallery"><a href="#pageGallery">Gallery</a></li>
+    <li data-menuanchor="pageAbout"><a href="#pageAbout/1">About us</a></li>
 </ul>
 <div id="fullpage">
 
-    <div class="section" id="section0">
+    <div class="section" id="sectionWeAre">
         <div id="introPage">
             <script>
                 $(function(){
@@ -55,11 +56,16 @@
             </script>
         </div>
     </div>
-    <div class="section" id="section1">
-        <div class="slide" id="slide1"><h1>About Polina</h1></div>
-        <div class="slide active" id="slide2"><h1>About us</h1></div>
-        <div class="slide" id="slide3"><h1>About Andrey</h1></div>
+    <div class="section" id="sectionTheStory">
+
     </div>
-    <div class="section" id="section2"><h1>Video</h1></div>
+    <div class="section" id="sectionGallery">
+
+    </div>
+    <div class="section" id="sectionAbout">
+        <div class="slide" id="slidePolina"><h1>About Polina</h1></div>
+        <div class="slide active" id="slideUs"><h1>About us</h1></div>
+        <div class="slide" id="slideAndrey"><h1>About Andrey</h1></div>
+    </div>
 </div>
 </body>
