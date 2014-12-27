@@ -1,0 +1,30 @@
+.textBoxBg {
+    background-color: #d3c7bf;
+    border-radius: 14px;
+    opacity: 0.70;
+    filter: "alpha(opacity=60)";
+    -ms-filter: "alpha(opacity=60)";
+    position: absolute;
+    width: 80%;
+    height: 120px;
+    top: 70px;
+    left: 10%
+}
+
+.gallery {
+    width: 480px;
+    margin-top: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentText {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 90px;
+    font-size: 15px;
+    color: #505050;
+    line-height: 1.35em;
+    overflow: hidden;
+}
