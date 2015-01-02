@@ -1,12 +1,13 @@
 package cc.vlasenko.site.model;
 
 public class ImageBean {
+    public static final String URL_PREFIX = "../resources/img/";
     private String fullSize;
     private String icon;
 
-    public ImageBean(String fullSize, String icon) {
-        this.fullSize = fullSize;
-        this.icon = icon;
+    public ImageBean(String imgName) {
+        this.fullSize = URL_PREFIX + "fs/" + imgName;
+        this.icon = URL_PREFIX + "ic/" + imgName;
     }
 
     public String getFullSize() {

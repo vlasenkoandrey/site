@@ -60,7 +60,7 @@
         <div id="storyDiv">
             <script>
                 $(function(){
-                    $('#storyDiv').load("story.jsp");
+                    $('#storyDiv').load("tgstory.jsp");
                 });
             </script>
         </div>

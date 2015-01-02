@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="resourceResolver" class="cc.vlasenko.site.TextGalleryResourceResolver">
+        <constructor-arg>
+            <util:map>
+                <entry key="STORY">
+                    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean">
+                        <property name="images">
+                            <array>
+                                <bean class="cc.vlasenko.site.model.ImageBean">
+                                    <constructor-arg value="1.jpg"/>
+                                </bean>
+                                <bean class="cc.vlasenko.site.model.ImageBean">
+                                    <constructor-arg value="2.jpg"/>
+                                </bean>
+                                <bean class="cc.vlasenko.site.model.ImageBean">
+                                    <constructor-arg value="3.jpg"/>
+                                </bean>
+                            </array>
+                        </property>
+                        <property name="videos">
+                            <array>
+                                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
+                            </array>
+                        </property>
+                        <property name="text" value="story.txt"/>
+                    </bean>
+                </entry>
+            </util:map>
+        </constructor-arg>
+    </bean>
+
+</beans>
