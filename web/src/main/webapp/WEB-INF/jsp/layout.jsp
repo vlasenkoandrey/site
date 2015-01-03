@@ -80,7 +80,7 @@
         <div class="slide active" id="slideAlbums">
             <div><h1>todo Все альбомы</h1></div>
         </div>
-        <div class="slide active" id="slideAstrahan">
+        <div class="slide" id="slideAstrahan">
             <div id="galleryAstrahan">
                 <script>
                 $(function(){
@@ -89,7 +89,7 @@
                 </script>
             </div>
         </div>
-        <div class="slide active" id="slidePhuket"><h1>Пхукет</h1></div>
+        <div class="slide" id="slidePhuket"><h1>Пхукет</h1></div>
     </div>
     <div class="section" id="sectionAbout">
         <div class="slide" id="slidePolina"><h1>About Polina</h1></div>
