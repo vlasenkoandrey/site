@@ -33,6 +33,29 @@
                         <property name="text" value="story.txt"/>
                     </bean>
                 </entry>
+                <entry key="ASTRAHAN">
+                    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean">
+                        <property name="images">
+                            <array>
+                                <bean class="cc.vlasenko.site.model.ImageBean">
+                                    <constructor-arg value="1.jpg"/>
+                                </bean>
+                                <bean class="cc.vlasenko.site.model.ImageBean">
+                                    <constructor-arg value="2.jpg"/>
+                                </bean>
+                                <bean class="cc.vlasenko.site.model.ImageBean">
+                                    <constructor-arg value="3.jpg"/>
+                                </bean>
+                            </array>
+                        </property>
+                        <property name="videos">
+                            <array>
+                                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
+                            </array>
+                        </property>
+                        <property name="text" value="gallery/astrahan.txt"/>
+                    </bean>
+                </entry>
             </util:map>
         </constructor-arg>
     </bean>
