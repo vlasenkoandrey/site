@@ -23,7 +23,8 @@
 }
 
 .markerMap {
-    width: 800px;
+    position: relative;
+    width: 70%;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
