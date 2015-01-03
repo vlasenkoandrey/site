@@ -89,6 +89,15 @@
                 </script>
             </div>
         </div>
+        <div class="slide" id="slideGreece">
+            <div id="galleryGreece">
+                <script>
+                    $(function(){
+                        $('#galleryGreece').load("tggreece.jsp");
+                    });
+                </script>
+            </div>
+        </div>
         <div class="slide" id="slidePhuket"><h1>Пхукет</h1></div>
     </div>
     <div class="section" id="sectionAbout">

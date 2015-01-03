@@ -5,31 +5,29 @@
 <link rel="stylesheet" type="text/css" href="../resources/fotorama/fotorama.css"/>
 <link rel="stylesheet" type="text/css" href="../resources/css/text-gallery.css"/>
 
-<div>
-    <div class="textBoxBg">
-        <div id="textFd${id}" class="contentText">
-            <p id="pText${id}"></p>
-        </div>
+<div class="textBoxBgGal">
+    <div id="textFd${id}" class="contentTextGal">
+        <p id="pText${id}"></p>
     </div>
-
-    <div class="gallery">
-        <div class="fotorama" data-maxwidth=80%" data-maxhight="70%" data-ratio="4/3" data-nav="thumbs" data-allowfullscreen="true">
-            <c:forEach items="${videos}" var="video">
-                <a href="${video}">One</a>
-            </c:forEach>
-
-            <c:forEach items="${images}" var="image">
-                <a href="${image.fullSize}"><img src="${image.icon}"/></a>
-            </c:forEach>
-        </div>
-    </div>
-    <script>
-        $('#pText${id}').load("${text}");
-        $("#textFd${id}").mCustomScrollbar({
-            scrollButtons:{
-                enable:true
-            },
-            theme:'rounded-dark'
-        });
-    </script>
 </div>
+
+<div class="gallery">
+    <div class="fotorama" data-maxwidth=80%" data-maxhight="70%" data-ratio="4/3" data-nav="thumbs" data-allowfullscreen="true">
+        <c:forEach items="${videos}" var="video">
+            <a href="${video}">One</a>
+        </c:forEach>
+
+        <c:forEach items="${images}" var="image">
+            <a href="${image.fullSize}"><img src="${image.icon}"/></a>
+        </c:forEach>
+    </div>
+</div>
+<script>
+    $('#pText${id}').load("${text}");
+    $("#textFd${id}").mCustomScrollbar({
+        scrollButtons:{
+            enable:true
+        },
+        theme:'rounded-dark'
+    });
+</script>
