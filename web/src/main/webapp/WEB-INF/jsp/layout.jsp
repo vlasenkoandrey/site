@@ -16,6 +16,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
     <script type="text/javascript" src="../resources/fullPage/jquery.fullPage.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
     <link rel="stylesheet" type="text/css" href="../resources/customScrollbar/jquery.mCustomScrollbar.css">
     <script src="../resources/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -26,7 +27,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['pageWeAre', 'pageTheStory', 'pageGallery', 'pageAbout'],
+                anchors: ['pageWeAre', 'pageTheStory', 'pageTravelling', 'pageGallery', 'pageAbout'],
                 verticalCentered: true,
                 slidesNavigation: true,
                 loopHorizontal: false,
@@ -42,6 +43,7 @@
 <ul id="menu">
     <li data-menuanchor="pageWeAre" class="active"><a href="#pageWeAre">We are</a></li>
     <li data-menuanchor="pageTheStory"><a href="#pageTheStory">The Story</a></li>
+    <li data-menuanchor="pageTravelling"><a href="#pageTravelling">Travelling</a></li>
     <li data-menuanchor="pageGallery"><a href="#pageGallery">Gallery</a></li>
     <li data-menuanchor="pageAbout"><a href="#pageAbout/1">About us</a></li>
 </ul>
@@ -61,6 +63,15 @@
             <script>
                 $(function(){
                     $('#storyDiv').load("tgstory.jsp");
+                });
+            </script>
+        </div>
+    </div>
+    <div class="section" id="sectionTravelling">
+        <div id="travelDiv">
+            <script>
+                $(function(){
+                    $('#travelDiv').load("travel.jsp");
                 });
             </script>
         </div>

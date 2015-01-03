@@ -1,8 +1,8 @@
 package cc.vlasenko.site.model;
 
-public class TextGalleryResourceBean {
-    public static final String URL_PREFIX_TEXT = "../resources/text/";
+import static cc.vlasenko.site.ResourceResolver.URL_PREFIX_TEXT;
 
+public class TextGalleryResourceBean {
     private ImageBean[] images;
     private String[] videos;
     private String text;
