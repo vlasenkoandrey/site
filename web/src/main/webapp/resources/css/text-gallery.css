@@ -4,7 +4,6 @@
     opacity: 0.70;
     filter: "alpha(opacity=60)";
     -ms-filter: "alpha(opacity=60)";
-    position: absolute;
     width: 80%;
     height: 120px;
     top: 70px;

@@ -25,6 +25,7 @@ public class TextGalleryController {
         modelMap.addAttribute("text", resourceBean.getText());
         modelMap.addAttribute("videos", resourceBean.getVideos());
         modelMap.addAttribute("images", resourceBean.getImages());
+        modelMap.addAttribute("id", resource);
         return "gallery";
     }
 }
