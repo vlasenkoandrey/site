@@ -31,7 +31,7 @@
                 verticalCentered: true,
                 slidesNavigation: true,
                 loopHorizontal: false,
-                scrollBar: false,
+                scrollBar: true,
                 menu: '#menu',
                 css3: true
             });
