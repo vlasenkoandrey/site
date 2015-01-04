@@ -78,7 +78,7 @@
     </div>
     <div class="section" id="sectionGallery">
         <div class="slide active" id="slideAlbums">
-            <div id="albumsSet">
+            <div id="albumsSet"  style="margin-left: 40px; margin-right: 40px">
             <script>
                 $(function(){
                     $('#albumsSet').load("go/albums_set.jsp");
