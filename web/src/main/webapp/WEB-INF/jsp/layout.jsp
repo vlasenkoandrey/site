@@ -78,7 +78,13 @@
     </div>
     <div class="section" id="sectionGallery">
         <div class="slide active" id="slideAlbums">
-            <div><h1>todo Все альбомы</h1></div>
+            <div id="albumsSet">
+            <script>
+                $(function(){
+                    $('#albumsSet').load("go/albums_set.jsp");
+                });
+                </script>
+                </div>
         </div>
         <div class="slide" id="slideAstrahan">
             <div id="galleryAstrahan">
