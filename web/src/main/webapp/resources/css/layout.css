@@ -34,8 +34,7 @@ h2{
 #slidePolina,
 #slideUs,
 #slideAndrey{
-    background-image: url("../img/main_background.jpg");
-    background-repeat: repeat;
+    background: url("../img/main_background.jpg") repeat;
 }
 
 .fullPage-slidesNav.bottom{
