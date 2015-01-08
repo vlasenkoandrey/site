@@ -9,7 +9,7 @@
     box-shadow: 0 0 25px #717171;
     border-radius: 8px;
     position: relative;
-    margin: auto auto;
+    margin: 5px auto;
 }
 
 .center-cropped:hover {

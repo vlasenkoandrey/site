@@ -1,0 +1,86 @@
+.share_button {
+    display: inline-block;
+    cursor: pointer;
+    position:fixed;
+    width: 40px;
+    height: 40px;
+    top : 10px;
+    -webkit-filter: invert(70%);
+    filter: invert(70%);
+}
+
+@keyframes rot { /* CSS3 */
+    0%  {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        filter: invert(70%);
+        -webkit-filter: invert(70%);
+    }
+    100%{
+        transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+    }
+}
+@-moz-keyframes rot { /* Firefox */
+    0%  {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        filter: invert(70%);
+        -webkit-filter: invert(70%);
+    }
+    100%{
+        transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+    }
+}
+@-webkit-keyframes rot { /* Webkit */
+    0%  {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        filter: invert(70%);
+        -webkit-filter: invert(70%);
+    }
+    100%{
+        transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+    }
+}
+
+.share_button:hover {
+    animation: rot 0.5s;
+    -moz-animation: rot 0.5s; /* Firefox */
+    -webkit-animation: rot 0.5s; /* Webkit */
+
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.facebook {
+    right: 10px;
+    background : url("../img/share/facebook32.png") center center no-repeat;
+}
+
+.twitter {
+    right: 50px;
+    background : url("../img/share/twitter32.png") center center no-repeat;
+}
+
+.googleplus {
+    right: 90px;
+    background : url("../img/share/googleplus32.png") center center no-repeat;
+}

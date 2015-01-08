@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/intro.css"/>
     <link rel="stylesheet" type="text/css" href="../resources/css/grid.css"/>
     <link rel="stylesheet" type="text/css" href="../resources/css/responsive-grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../resources/css/share.css"/>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -112,4 +113,7 @@
         <div class="slide" id="slideAndrey"><h1>About Andrey</h1></div>
     </div>
 </div>
+<div class="share_button facebook"></div>
+<div class="share_button googleplus"></div>
+<div class="share_button twitter"></div>
 </body>
