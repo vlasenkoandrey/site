@@ -5,6 +5,7 @@
     width: 40px;
     height: 40px;
     top : 10px;
+    z-index: 80;
     -webkit-filter: invert(70%);
     filter: invert(70%);
 }
