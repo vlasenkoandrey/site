@@ -19,6 +19,8 @@
     <script type="text/javascript" src="../resources/fullPage/jquery.fullPage.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
+    <script type="text/javascript" src="../resources/inview/inview.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="../resources/customScrollbar/jquery.mCustomScrollbar.css">
     <script src="../resources/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../resources/css/intro.css"/>
@@ -53,57 +55,27 @@
 
     <div class="section" id="sectionWeAre">
         <div id="introPage">
-            <script>
-                $(function(){
-                    $('#introPage').load("intro.jsp");
-                });
-            </script>
         </div>
     </div>
     <div class="section" id="sectionTheStory">
         <div id="storyDiv">
-            <script>
-                $(function(){
-                    $('#storyDiv').load("tgstory.jsp");
-                });
-            </script>
         </div>
     </div>
     <div class="section" id="sectionTravelling">
         <div id="travelDiv">
-            <script>
-                $(function(){
-                    $('#travelDiv').load("travel.jsp");
-                });
-            </script>
         </div>
     </div>
     <div class="section" id="sectionGallery">
         <div class="slide active" id="slideAlbums">
             <div id="albumsSet"  style="margin-left: 40px; margin-right: 40px">
-            <script>
-                $(function(){
-                    $('#albumsSet').load("go/albums_set.jsp");
-                });
-                </script>
-                </div>
+            </div>
         </div>
         <div class="slide" id="slideAstrahan">
             <div id="galleryAstrahan">
-                <script>
-                $(function(){
-                    $('#galleryAstrahan').load("tgastrahan.jsp");
-                });
-                </script>
             </div>
         </div>
         <div class="slide" id="slideGreece">
             <div id="galleryGreece">
-                <script>
-                    $(function(){
-                        $('#galleryGreece').load("tggreece.jsp");
-                    });
-                </script>
             </div>
         </div>
         <div class="slide" id="slidePhuket"><h1>Пхукет</h1></div>
@@ -119,4 +91,6 @@
 <div class="share_button twitter" onclick="tweet()"></div>
 <div class="share_button linkedin" onclick="shareLinkedin('Andrey Vlasenko, Software Engineer')"></div>
 <div class="share_button vk" onclick="shareVk()"></div>
+
+<script src="../resources/js/layout.js"></script>
 </body>
