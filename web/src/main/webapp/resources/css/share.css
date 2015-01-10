@@ -72,7 +72,7 @@
 }
 
 .facebook {
-    right: 10px;
+    right: 90px;
     background : url("../img/share/facebook32.png") center center no-repeat;
 }
 
@@ -82,6 +82,16 @@
 }
 
 .googleplus {
-    right: 90px;
+    right: 10px;
     background : url("../img/share/googleplus32.png") center center no-repeat;
+}
+
+.linkedin {
+    right: 170px;
+    background: url("../img/share/linkedin32.png") center center no-repeat;
+}
+
+.vk {
+    right: 130px;
+    background: url("../img/share/vk32.png") center center no-repeat;
 }

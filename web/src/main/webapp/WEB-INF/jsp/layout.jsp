@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="../resources/css/menu.css" />
 
+    <script type="text/javascript" src="../resources/js/share.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
@@ -113,7 +114,9 @@
         <div class="slide" id="slideAndrey"><h1>About Andrey</h1></div>
     </div>
 </div>
-<div class="share_button facebook"></div>
-<div class="share_button googleplus"></div>
-<div class="share_button twitter"></div>
+<div class="share_button facebook" onclick="shareFb()"></div>
+<div class="share_button googleplus" onclick="shareGoog()"></div>
+<div class="share_button twitter" onclick="tweet()"></div>
+<div class="share_button linkedin" onclick="shareLinkedin('Andrey Vlasenko, Software Engineer')"></div>
+<div class="share_button vk" onclick="shareVk()"></div>
 </body>
