@@ -29,7 +29,7 @@
     </div>
 
     <div class="yui3-u-1-3">
-        <p style="margin-top: 40%">picture here</p>
+        <div class="weArePhoto"></div>
     </div>
 
     <div class="yui3-u-1-3">

@@ -32,3 +32,14 @@
 .pm2 {
     margin-top: 2px;
 }
+
+.weArePhoto {
+    display: inline-block;
+    background: url("../img/weArePhoto.png") center center no-repeat;
+    background-size: auto 550px;
+    margin-top: 80px;
+    height: 550px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
