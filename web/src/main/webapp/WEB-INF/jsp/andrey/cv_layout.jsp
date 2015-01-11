@@ -16,6 +16,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
     <script type="text/javascript" src="../../resources/fullPage/jquery.fullPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/css/grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../resources/css/responsive-grid.css"/>
 
     <script type="text/javascript">
         $(document).ready(function() {

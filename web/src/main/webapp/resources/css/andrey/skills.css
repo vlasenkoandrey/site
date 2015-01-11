@@ -1,0 +1,15 @@
+.subzero {
+    display: inline-block;
+    background: url("../../img/subZeroPhoto.png") 0 center no-repeat;
+    background-size: auto 400px;
+    height: 400px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.skillscloud {
+    width: 400px;
+    height: 400px;
+    margin-right: 0;
+    margin-left: auto;
+}
