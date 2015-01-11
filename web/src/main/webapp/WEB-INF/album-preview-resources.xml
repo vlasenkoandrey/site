@@ -1,0 +1,66 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:list id="album_preview_set_en">
+        <bean id="astrahan" class="cc.vlasenko.site.model.AlbumPreviewBean">
+            <constructor-arg index="0" value="astrahan"/>
+            <constructor-arg index="1" value="../resources/img/fs/1.jpg"/>
+            <constructor-arg index="2" value="Album 1"/>
+            <constructor-arg index="3" value="#"/>
+        </bean>
+        <bean id="greece" class="cc.vlasenko.site.model.AlbumPreviewBean">
+            <constructor-arg index="0" value="greece"/>
+            <constructor-arg index="1" value="../resources/img/fs/2.jpg"/>
+            <constructor-arg index="2" value="Album 2"/>
+            <constructor-arg index="3" value="#"/>
+        </bean>
+        <bean id="spain" class="cc.vlasenko.site.model.AlbumPreviewBean">
+            <constructor-arg index="0" value="spain"/>
+            <constructor-arg index="1" value="../resources/img/fs/3.jpg"/>
+            <constructor-arg index="2" value="Album 3"/>
+            <constructor-arg index="3" value="#"/>
+        </bean>
+    </util:list>
+    <util:list id="album_preview_set_ru">
+        <bean id="astrahan" class="cc.vlasenko.site.model.AlbumPreviewBean">
+            <constructor-arg index="0" value="astrahan"/>
+            <constructor-arg index="1" value="../resources/img/fs/1.jpg"/>
+            <constructor-arg index="2" value="Альбом 1"/>
+            <constructor-arg index="3" value="#"/>
+        </bean>
+        <bean id="greece" class="cc.vlasenko.site.model.AlbumPreviewBean">
+            <constructor-arg index="0" value="greece"/>
+            <constructor-arg index="1" value="../resources/img/fs/2.jpg"/>
+            <constructor-arg index="2" value="Альбом 2"/>
+            <constructor-arg index="3" value="#"/>
+        </bean>
+        <bean id="spain" class="cc.vlasenko.site.model.AlbumPreviewBean">
+            <constructor-arg index="0" value="spain"/>
+            <constructor-arg index="1" value="../resources/img/fs/3.jpg"/>
+            <constructor-arg index="2" value="Альбом 3"/>
+            <constructor-arg index="3" value="#"/>
+        </bean>
+    </util:list>
+
+    <util:map id="albumsMap" key-type="java.util.Locale" value-type="java.util.List">
+        <entry>
+            <key><util:constant static-field="java.util.Locale.ENGLISH"/></key>
+            <ref  bean="album_preview_set_en"/>
+        </entry>
+        <entry>
+            <key><util:constant static-field="java.util.Locale.FRANCE"/></key>
+            <ref  bean="album_preview_set_en"/>
+        </entry>
+    </util:map>
+
+    <bean id="albumPreviewContainer" class="cc.vlasenko.site.AlbumPreviewContainer">
+        <constructor-arg ref="albumsMap"/>
+    </bean>
+
+</beans>

@@ -28,7 +28,7 @@ $('#sectionTravelling').bind('inview', function(event, isInView, visiblePartX, v
 
 $('#slideAlbums').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
     if (isInView && !albumsSetLoaded) {
-        $('#albumsSet').load("go/albums_set.jsp");
+        $('#albumsSet').load("albums_set.jsp");
         albumsSetLoaded = true;
     }
 });
