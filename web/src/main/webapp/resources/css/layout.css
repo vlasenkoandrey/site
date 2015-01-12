@@ -25,15 +25,7 @@ h2{
     padding:0;
 }
 
-/* Defining each section background and styles
-* --------------------------------------- */
-#sectionWeAre,
-#sectionTheStory,
-#sectionTravelling,
-#sectionGallery,
-#slidePolina,
-#slideUs,
-#slideAndrey{
+body {
     background: url("../img/main_background.jpg") repeat;
 }
 
