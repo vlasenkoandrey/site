@@ -48,15 +48,9 @@
         </bean>
     </util:list>
 
-    <util:map id="albumsMap" key-type="java.util.Locale" value-type="java.util.List">
-        <entry>
-            <key><util:constant static-field="java.util.Locale.ENGLISH"/></key>
-            <ref  bean="album_preview_set_en"/>
-        </entry>
-        <entry>
-            <key><util:constant static-field="java.util.Locale.FRANCE"/></key>
-            <ref  bean="album_preview_set_en"/>
-        </entry>
+    <util:map id="albumsMap" key-type="java.lang.String" value-type="java.util.List">
+        <entry key="en" value-ref="album_preview_set_en"/>
+        <entry key="ru" value-ref="album_preview_set_en"/>
     </util:map>
 
     <bean id="albumPreviewContainer" class="cc.vlasenko.site.album.AlbumPreviewContainer">
