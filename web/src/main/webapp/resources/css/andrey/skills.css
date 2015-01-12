@@ -1,6 +1,6 @@
 .subzero {
     display: inline-block;
-    background: url("../../img/subZeroPhoto.png") 0 center no-repeat;
+    background: url("../../img/subZeroPhoto.png") 10% center no-repeat;
     background-size: auto 400px;
     height: 400px;
     width: 100%;
@@ -10,6 +10,6 @@
 .skillscloud {
     width: 400px;
     height: 400px;
-    margin-right: 0;
+    margin-right: 10%;
     margin-left: auto;
 }

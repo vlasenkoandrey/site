@@ -1,0 +1,53 @@
+.leftTextBoxBg, .rightTextBoxBg {
+    background-color: #d3c7bf;
+    border-radius: 14px;
+    opacity: 0.70;
+    filter: "alpha(opacity=60)";
+    -ms-filter: "alpha(opacity=60)";
+    position: static;
+    width: 70%;
+    height: 550px;
+    margin-top: 50px;
+}
+
+.leftTextBoxBg {
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.rightTextBoxBg {
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.rightContentBox, .leftContentBox {
+    width: 90%;
+    height: 530px;
+    font-size: 15px;
+    color: #505050;
+    line-height: 1.35em;
+    overflow: hidden;
+    margin-left: 7%;
+    padding-top: 10px;
+}
+
+.andreyMsuPhoto {
+    display: inline-block;
+    position: static;
+    width: 70%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 20%;
+    background: url("../../img/weArePhoto.png") center center no-repeat;
+    background-size: auto 550px;
+}
+
+.andreySbtPhoto {
+    position: static;
+    width: 70%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 10%;
+    background: url("../../img/weArePhoto.png") center center no-repeat;
+    background-size: auto 550px;
+}

@@ -15,14 +15,19 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
+    <script type="text/javascript" src="../resources/inview/inview.min.js"></script>
+
     <script type="text/javascript" src="../../resources/fullPage/jquery.fullPage.js"></script>
-    <link rel="stylesheet" type="text/css" href="../resources/css/grid.css"/>
-    <link rel="stylesheet" type="text/css" href="../resources/css/responsive-grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/responsive-grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/andrey/experiencePage.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/customScrollbar/jquery.mCustomScrollbar.css">
+    <script src="../../resources/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['pageSkills', 'pageEducation'],
+                anchors: ['pageSkills', 'pageEducation', 'pageExperience'],
                 verticalCentered: true,
                 slidesNavigation: true,
                 loopHorizontal: false,
@@ -38,23 +43,32 @@
 <ul id="menu">
     <li data-menuanchor="pageSkills" class="active"><a href="#pageSkills">Skills</a></li>
     <li data-menuanchor="pageEducation"><a href="#pageEducation">Education</a></li>
+    <li data-menuanchor="pageExperience"><a href="#pageExperience">Experience</a></li>
 </ul>
 <div id="fullpage">
 
     <div class="section" id="sectionSkills">
         <div id="skillsPage">
-            <script>
-                $(function(){
-                    $('#skillsPage').load("skills.jsp");
-                });
-            </script>
+
         </div>
     </div>
     <div class="section" id="sectionEducation">
-        <div id="educationDiv">
+        <div id="educationPage">
 
         </div>
     </div>
+    <div class="section" id="sectionExperience">
+        <div class="slide active" id="slideSbt">
+            <div id="sbtPage">
 
+            </div>
+        </div>
+        <div class="slide" id="slideHflabs">
+            <div id="hflabsPage">
+
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="../../resources/js/andrey_layout.js"></script>
 </div>
 </body>
