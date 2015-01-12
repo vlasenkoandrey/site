@@ -79,20 +79,14 @@
             <util:map>
                 <entry key="STORY">
                     <util:map>
-                        <entry>
-                            <key>
-                                <util:constant static-field="java.util.Locale.ENGLISH"/>
-                            </key>
+                        <entry key="en">
                             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
                                 <constructor-arg index="0" ref="story"/>
                                 <constructor-arg index="1" value="en/"/>
                                 <constructor-arg index="2" value="story/"/>
                             </bean>
                         </entry>
-                        <entry>
-                            <key>
-                                <util:constant static-field="java.util.Locale.FRANCE"/>
-                            </key>
+                        <entry key="ru">
                             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
                                 <constructor-arg index="0" ref="story"/>
                                 <constructor-arg index="1" value="ru/"/>
@@ -104,20 +98,14 @@
                 <entry key="ASTRAHAN">
 
                     <util:map>
-                        <entry>
-                            <key>
-                                <util:constant static-field="java.util.Locale.ENGLISH"/>
-                            </key>
+                        <entry key="ru">
                             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
                                 <constructor-arg index="0" ref="astrahan"/>
                                 <constructor-arg index="1" value="ru/"/>
                                 <constructor-arg index="2" value="gallery/astrahan/"/>
                             </bean>
                         </entry>
-                        <entry>
-                            <key>
-                                <util:constant static-field="java.util.Locale.FRANCE"/>
-                            </key>
+                        <entry key="en">
                             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
                                 <constructor-arg index="0" ref="astrahan"/>
                                 <constructor-arg index="1" value="en/"/>
@@ -130,20 +118,14 @@
                 <entry key="GREECE">
 
                     <util:map>
-                        <entry>
-                            <key>
-                                <util:constant static-field="java.util.Locale.ENGLISH"/>
-                            </key>
+                        <entry key="en">
                             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
                                 <constructor-arg index="0" ref="greece"/>
                                 <constructor-arg index="1" value="en/"/>
                                 <constructor-arg index="2" value="gallery/astrahan/"/>
                             </bean>
                         </entry>
-                        <entry>
-                            <key>
-                                <util:constant static-field="java.util.Locale.FRANCE"/>
-                            </key>
+                        <entry key="ru">
                             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
                                 <constructor-arg index="0" ref="greece"/>
                                 <constructor-arg index="1" value="ru/"/>

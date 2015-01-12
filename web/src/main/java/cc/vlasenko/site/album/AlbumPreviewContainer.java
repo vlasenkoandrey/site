@@ -4,18 +4,17 @@ package cc.vlasenko.site.album;
 import cc.vlasenko.site.model.AlbumPreviewBean;
 
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
 public class AlbumPreviewContainer {
-	private final Map<Locale, List<AlbumPreviewBean>> albumPreviewBeans;
+	private final Map<String, List<AlbumPreviewBean>> albumPreviewBeans;
 
-	public AlbumPreviewContainer(Map<Locale, List<AlbumPreviewBean>> albumPreviewBeans) {
+	public AlbumPreviewContainer(Map<String, List<AlbumPreviewBean>> albumPreviewBeans) {
 		this.albumPreviewBeans = albumPreviewBeans;
 	}
 
 
-	public List<AlbumPreviewBean> get(Locale locale) {
-		return albumPreviewBeans.get(locale);
+	public List<AlbumPreviewBean> get(String language) {
+		return albumPreviewBeans.get(language);
 	}
 }

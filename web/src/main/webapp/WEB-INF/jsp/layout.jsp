@@ -11,8 +11,10 @@
     <link rel="stylesheet" type="text/css" href="../resources/fullPage/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="../resources/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="../resources/css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/language.css" />
 
     <script type="text/javascript" src="../resources/js/share.js"></script>
+    <script type="text/javascript" src="../resources/js/language.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
@@ -28,8 +30,10 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/responsive-grid.css"/>
     <link rel="stylesheet" type="text/css" href="../resources/css/share.css"/>
 
+    <script src="../resources/js/language.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+            detectLanguage();
             $('#fullpage').fullpage({
                 anchors: ['pageWeAre', 'pageTheStory', 'pageTravelling', 'pageGallery', 'pageAbout'],
                 verticalCentered: true,
@@ -43,6 +47,7 @@
 </script>
 
 </head>
+
 <body>
 <ul id="menu">
     <li data-menuanchor="pageWeAre" class="active"><a href="#pageWeAre">We are</a></li>
@@ -91,6 +96,12 @@
 <div class="share_button twitter" onclick="tweet()"></div>
 <div class="share_button linkedin" onclick="shareLinkedin('Andrey Vlasenko, Software Engineer')"></div>
 <div class="share_button vk" onclick="shareVk()"></div>
+<div class="language" onchange="language()">
+    <select id="selectedLanguage">
+        <option id="english" value="en">English</option>
+        <option id="russian" value="ru">Russian</option>
+    </select>
+</div>
 
 <script src="../resources/js/layout.js"></script>
 </body>
