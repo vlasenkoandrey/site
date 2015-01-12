@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:map id="travellingTextMap" key-type="java.util.Locale" value-type="java.lang.String">
+        <entry>
+            <key><util:constant static-field="java.util.Locale.ENGLISH"/></key>
+            <value>en</value>
+        </entry>
+        <entry>
+            <key><util:constant static-field="java.util.Locale.FRANCE"/></key>
+            <value>ru</value>
+        </entry>
+    </util:map>
+
+    <bean id="travellingTextContainer" class="cc.vlasenko.site.travelling.TravellingTextContainer">
+        <constructor-arg ref="travellingTextMap"/>
+    </bean>
+
+</beans>

@@ -59,7 +59,7 @@
         </entry>
     </util:map>
 
-    <bean id="albumPreviewContainer" class="cc.vlasenko.site.AlbumPreviewContainer">
+    <bean id="albumPreviewContainer" class="cc.vlasenko.site.album.AlbumPreviewContainer">
         <constructor-arg ref="albumsMap"/>
     </bean>
 

@@ -7,77 +7,151 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
 
+    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="story">
+        <property name="images">
+            <array>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg value="1.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg value="2.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg value="3.jpg"/>
+                </bean>
+            </array>
+        </property>
+        <property name="videos">
+            <array>
+                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
+            </array>
+        </property>
+        <property name="text" value="story.txt"/>
+    </bean>
+
+    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="astrahan">
+        <property name="images">
+            <array>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg value="1.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg value="2.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg value="3.jpg"/>
+                </bean>
+            </array>
+        </property>
+        <property name="videos">
+            <array>
+                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
+            </array>
+        </property>
+        <property name="text" value="astrahan.txt"/>
+    </bean>
+
+    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="greece">
+        <property name="images">
+            <array>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg value="1.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg value="2.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg value="3.jpg"/>
+                </bean>
+            </array>
+        </property>
+        <property name="videos">
+            <array>
+                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
+            </array>
+        </property>
+        <property name="text" value="astrahan.txt"/>
+    </bean>
+
+
     <bean id="resourceResolver" class="cc.vlasenko.site.TextGalleryResourceResolver">
         <constructor-arg>
             <util:map>
                 <entry key="STORY">
-                    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean">
-                        <property name="images">
-                            <array>
-                                <bean class="cc.vlasenko.site.model.ImageBean">
-                                    <constructor-arg value="1.jpg"/>
-                                </bean>
-                                <bean class="cc.vlasenko.site.model.ImageBean">
-                                    <constructor-arg value="2.jpg"/>
-                                </bean>
-                                <bean class="cc.vlasenko.site.model.ImageBean">
-                                    <constructor-arg value="3.jpg"/>
-                                </bean>
-                            </array>
-                        </property>
-                        <property name="videos">
-                            <array>
-                                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
-                            </array>
-                        </property>
-                        <property name="text" value="story.txt"/>
-                    </bean>
+                    <util:map>
+                        <entry>
+                            <key>
+                                <util:constant static-field="java.util.Locale.ENGLISH"/>
+                            </key>
+                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                                <constructor-arg index="0" ref="story"/>
+                                <constructor-arg index="1" value="en/"/>
+                                <constructor-arg index="2" value="story/"/>
+                            </bean>
+                        </entry>
+                        <entry>
+                            <key>
+                                <util:constant static-field="java.util.Locale.FRANCE"/>
+                            </key>
+                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                                <constructor-arg index="0" ref="story"/>
+                                <constructor-arg index="1" value="ru/"/>
+                                <constructor-arg index="2" value="story/"/>
+                            </bean>
+                        </entry>
+                    </util:map>
                 </entry>
                 <entry key="ASTRAHAN">
-                    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean">
-                        <property name="images">
-                            <array>
-                                <bean class="cc.vlasenko.site.model.ImageBean">
-                                    <constructor-arg value="1.jpg"/>
-                                </bean>
-                                <bean class="cc.vlasenko.site.model.ImageBean">
-                                    <constructor-arg value="2.jpg"/>
-                                </bean>
-                                <bean class="cc.vlasenko.site.model.ImageBean">
-                                    <constructor-arg value="3.jpg"/>
-                                </bean>
-                            </array>
-                        </property>
-                        <property name="videos">
-                            <array>
-                                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
-                            </array>
-                        </property>
-                        <property name="text" value="gallery/astrahan.txt"/>
-                    </bean>
+
+                    <util:map>
+                        <entry>
+                            <key>
+                                <util:constant static-field="java.util.Locale.ENGLISH"/>
+                            </key>
+                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                                <constructor-arg index="0" ref="astrahan"/>
+                                <constructor-arg index="1" value="ru/"/>
+                                <constructor-arg index="2" value="gallery/astrahan/"/>
+                            </bean>
+                        </entry>
+                        <entry>
+                            <key>
+                                <util:constant static-field="java.util.Locale.FRANCE"/>
+                            </key>
+                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                                <constructor-arg index="0" ref="astrahan"/>
+                                <constructor-arg index="1" value="en/"/>
+                                <constructor-arg index="2" value="gallery/astrahan/"/>
+                            </bean>
+                        </entry>
+                    </util:map>
+
                 </entry>
                 <entry key="GREECE">
-                    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean">
-                        <property name="images">
-                            <array>
-                                <bean class="cc.vlasenko.site.model.ImageBean">
-                                    <constructor-arg value="1.jpg"/>
-                                </bean>
-                                <bean class="cc.vlasenko.site.model.ImageBean">
-                                    <constructor-arg value="2.jpg"/>
-                                </bean>
-                                <bean class="cc.vlasenko.site.model.ImageBean">
-                                    <constructor-arg value="3.jpg"/>
-                                </bean>
-                            </array>
-                        </property>
-                        <property name="videos">
-                            <array>
-                                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
-                            </array>
-                        </property>
-                        <property name="text" value="gallery/astrahan.txt"/>
-                    </bean>
+
+                    <util:map>
+                        <entry>
+                            <key>
+                                <util:constant static-field="java.util.Locale.ENGLISH"/>
+                            </key>
+                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                                <constructor-arg index="0" ref="greece"/>
+                                <constructor-arg index="1" value="en/"/>
+                                <constructor-arg index="2" value="gallery/astrahan/"/>
+                            </bean>
+                        </entry>
+                        <entry>
+                            <key>
+                                <util:constant static-field="java.util.Locale.FRANCE"/>
+                            </key>
+                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                                <constructor-arg index="0" ref="greece"/>
+                                <constructor-arg index="1" value="ru/"/>
+                                <constructor-arg index="2" value="gallery/astrahan/"/>
+                            </bean>
+                        </entry>
+                    </util:map>
+
                 </entry>
             </util:map>
         </constructor-arg>

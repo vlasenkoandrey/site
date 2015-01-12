@@ -1,4 +1,4 @@
-package cc.vlasenko.site;
+package cc.vlasenko.site.album;
 
 
 import cc.vlasenko.site.model.AlbumPreviewBean;

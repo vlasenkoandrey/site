@@ -1,7 +1,5 @@
 package cc.vlasenko.site.model;
 
-import static cc.vlasenko.site.ResourceResolver.URL_PREFIX_TEXT;
-
 public class TextGalleryResourceBean {
     private ImageBean[] images;
     private String[] videos;
@@ -28,6 +26,6 @@ public class TextGalleryResourceBean {
     }
 
     public void setText(String text) {
-        this.text = URL_PREFIX_TEXT + text;
+        this.text = text;
     }
 }

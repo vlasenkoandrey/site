@@ -7,25 +7,29 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.Locale;
+
 import static cc.vlasenko.site.model.TextGalleryResource.valueOf;
+import static cc.vlasenko.site.ResourceResolver.URL_PREFIX_TEXT;
 
 @Controller
 public class TextGalleryController {
 
-    private ResourceResolver resourceResolver;
+	private ResourceResolver resourceResolver;
 
-    @Autowired
-    public TextGalleryController(ResourceResolver resourceResolver) {
-        this.resourceResolver = resourceResolver;
-    }
+	@Autowired
+	public TextGalleryController(ResourceResolver resourceResolver) {
+		this.resourceResolver = resourceResolver;
+	}
 
-    @RequestMapping("/tg{resource}.jsp")
-    public String getStory(ModelMap modelMap, @PathVariable String resource) {
-        TextGalleryResourceBean resourceBean = resourceResolver.getResourceBean(valueOf(resource.toUpperCase()));
-        modelMap.addAttribute("text", resourceBean.getText());
-        modelMap.addAttribute("videos", resourceBean.getVideos());
-        modelMap.addAttribute("images", resourceBean.getImages());
-        modelMap.addAttribute("id", resource);
-        return "gallery";
-    }
+	@RequestMapping("/tg{resource}.jsp")
+	public String getStory(ModelMap modelMap, @PathVariable String resource, Locale locale) {
+		TextGalleryResourceContainer resourceContainer = resourceResolver.getResourceBean(valueOf(resource.toUpperCase()), locale);
+		TextGalleryResourceBean resourceBean = resourceContainer.getTextGalleryResourceBean();
+		modelMap.addAttribute("text", URL_PREFIX_TEXT + resourceContainer.getResourcePrefix() + resourceContainer.getLocalePrefix() + resourceBean.getText());
+		modelMap.addAttribute("videos", resourceBean.getVideos()); //todo тут тоже нужно запихнуть в свои директории
+		modelMap.addAttribute("images", resourceBean.getImages());
+		modelMap.addAttribute("id", resource);
+		return "gallery";
+	}
 }

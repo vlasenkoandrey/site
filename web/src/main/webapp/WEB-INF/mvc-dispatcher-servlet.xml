@@ -13,6 +13,7 @@
     <import resource="text-gallery-resources.xml"/>
     <import resource="skills-beans.xml"/>
     <import resource="album-preview-resources.xml"/>
+    <import resource="travelling-resources.xml"/>
 
     <context:component-scan base-package="cc.vlasenko" />
 
