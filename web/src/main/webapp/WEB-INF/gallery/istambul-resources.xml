@@ -64,7 +64,7 @@
                 </bean>
             </array>
         </property>
-        <property name="text" value="astrahan.txt"/>
+        <property name="text" value="istambul.txt"/>
     </bean>
 
 </beans>

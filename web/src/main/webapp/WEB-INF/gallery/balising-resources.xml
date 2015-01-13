@@ -122,7 +122,7 @@
                 <value>http://www.youtube.com/watch?v=9vh0ksECf6Y</value>
             </array>
         </property>
-        <property name="text" value="astrahan.txt"/>
+        <property name="text" value="balising.txt"/>
     </bean>
 
 </beans>

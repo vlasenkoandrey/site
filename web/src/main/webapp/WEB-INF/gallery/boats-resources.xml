@@ -101,7 +101,7 @@
                 </bean>
             </array>
         </property>
-        <property name="text" value="astrahan.txt"/>
+        <property name="text" value="boats.txt"/>
     </bean>
 
 </beans>

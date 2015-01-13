@@ -98,7 +98,7 @@
                 <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
             </array>
         </property>
-        <property name="text" value="astrahan.txt"/>
+        <property name="text" value="andorra.txt"/>
     </bean>
 
 </beans>
