@@ -35,4 +35,33 @@
         <value>Mockito</value>
         <value>ActiveMQ</value>
     </util:list>
+
+    <util:list id="polinaSkills">
+        <value>Java</value>
+        <value>Oracle</value>
+        <value>Spring</value>
+        <value>JDBC</value>
+        <value>JMS</value>
+        <value>Concurrency</value>
+        <value>Multithreading</value>
+        <value>Collections</value>
+        <value>Tomcat</value>
+        <value>Jetty</value>
+        <value>Intellij Idea</value>
+        <value>Eclipse</value>
+        <value>HTTP</value>
+        <value>HTTPS</value>
+        <value>Maven</value>
+        <value>Gradle</value>
+        <value>XML</value>
+        <value>SQL</value>
+        <value>Git</value>
+        <value>Subversion</value>
+        <value>Servlets</value>
+        <value>SOAP</value>
+        <value>REST</value>
+        <value>Coherence</value>
+        <value>Mockito</value>
+        <value>ActiveMQ</value>
+    </util:list>
 </beans>

@@ -1,4 +1,4 @@
-package cc.vlasenko.andrey;
+package cc.vlasenko.cv;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Controller
-public class SkillsController {
+public class AndreySkillsController {
     @Resource(name = "andreySkills")
     private List<String> skills;
 

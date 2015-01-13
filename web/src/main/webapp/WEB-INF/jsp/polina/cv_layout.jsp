@@ -2,8 +2,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Andrey</title>
-    <meta name="author" content="Mr. Vlasenko" />
+    <title>Polina</title>
+    <meta name="author" content="Mrs. Vlasenko" />
     <meta name="description" content="Online CV" />
     <meta name="keywords"  content="vlasenko" />
     <meta name="Resource-type" content="Document" />
@@ -57,17 +57,17 @@
         </div>
     </div>
     <div class="section" id="sectionExperience">
-        <div class="slide active" id="slideSbt">
-            <div id="sbtPage">
+        <div class="slide active" id="slideQiwiLead">
+            <div id="qiwiLeadPage">
 
             </div>
         </div>
-        <div class="slide" id="slideHflabs">
-            <div id="hflabsPage">
+        <div class="slide" id="slideQiwi">
+            <div id="qiwiPage">
 
             </div>
         </div>
     </div>
-<script type="text/javascript" src="../../resources/js/andrey_layout.js"></script>
+    <script type="text/javascript" src="../../resources/js/polina_layout.js"></script>
 </div>
 </body>

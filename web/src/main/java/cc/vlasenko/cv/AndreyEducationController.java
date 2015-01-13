@@ -1,11 +1,11 @@
-package cc.vlasenko.andrey;
+package cc.vlasenko.cv;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class EducationController {
+public class AndreyEducationController {
     @RequestMapping("/andrey/msu.jsp")
     public String getEducation(ModelMap modelMap) {
         modelMap.addAttribute("text", "../resources/text/story.txt");
