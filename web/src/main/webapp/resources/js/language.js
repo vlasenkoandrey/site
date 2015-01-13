@@ -12,7 +12,7 @@ function detectLanguage() {
         if (userLang == 'en' || userLang == 'ru') {
             boxValue = userLang;
         }
-        $("select#selectedLanguage").val('ru').value = 'true';
+        $("select#selectedLanguage").val(boxValue).value = 'true';
         $.post('language/set', {language: userLang});
         languageSelectorLoaded = true;
     }
