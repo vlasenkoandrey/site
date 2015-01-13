@@ -1,6 +1,7 @@
 skillsPageLoaded = false;
 educationPageLoaded = false;
 qiwiLeadPageLoaded = false;
+qiwiPageLoaded = false;
 
 $('#sectionSkills').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
     if (isInView && !skillsPageLoaded) {
@@ -9,16 +10,23 @@ $('#sectionSkills').bind('inview', function(event, isInView, visiblePartX, visib
     }
 });
 
-//$('#sectionEducation').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-//    if (isInView && !educationPageLoaded) {
-//        $('#educationPage').load("msu.jsp");
-//        educationPageLoaded = true;
-//    }
-//});
-//
-//$('#slideQiwiLead').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-//    if (isInView && !qiwiLeadPageLoaded) {
-//        $('#qiwiLeadPage').load("qiwilead.jsp");
-//        qiwiLeadPageLoaded = true;
-//    }
-//});
+$('#sectionEducation').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !educationPageLoaded) {
+        $('#educationPage').load("msu.jsp");
+        educationPageLoaded = true;
+    }
+});
+
+$('#slideQiwiLead').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !qiwiLeadPageLoaded) {
+        $('#qiwiLeadPage').load("qiwilead.jsp");
+        qiwiLeadPageLoaded = true;
+    }
+});
+
+$('#slideQiwi').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !qiwiPageLoaded) {
+        $('#qiwiPage').load("qiwi.jsp");
+        qiwiPageLoaded = true;
+    }
+});

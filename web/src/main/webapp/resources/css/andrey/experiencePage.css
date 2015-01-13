@@ -51,3 +51,53 @@
     background: url("../../img/weArePhoto.png") center center no-repeat;
     background-size: auto 550px;
 }
+
+.polinaMsuPhoto {
+    position: static;
+    width: 70%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 10%;
+    background: url("../../img/weArePhoto.png") center center no-repeat;
+    background-size: auto 550px;
+}
+
+.polinaQiwiLeadPhoto {
+    position: static;
+    width: 70%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 20%;
+    background: url("../../img/weArePhoto.png") center center no-repeat;
+    background-size: auto 550px;
+}
+
+.polinaQiwiPhoto {
+    position: static;
+    width: 70%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 10%;
+    background: url("../../img/weArePhoto.png") center center no-repeat;
+    background-size: auto 550px;
+}
+
+.andreyHflabsPhoto {
+    position: static;
+    width: 70%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 20%;
+    background: url("../../img/weArePhoto.png") center center no-repeat;
+    background-size: auto 550px;
+}
+
+.andreyQwPhoto {
+    position: static;
+    width: 70%;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 10%;
+    background: url("../../img/weArePhoto.png") center center no-repeat;
+    background-size: auto 550px;
+}

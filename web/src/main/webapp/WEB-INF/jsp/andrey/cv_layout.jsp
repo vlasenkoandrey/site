@@ -67,6 +67,11 @@
 
             </div>
         </div>
+        <div class="slide" id="slideQiwiWallet">
+            <div id="qiwiWalletPage">
+
+            </div>
+        </div>
     </div>
 <script type="text/javascript" src="../../resources/js/andrey_layout.js"></script>
 </div>
