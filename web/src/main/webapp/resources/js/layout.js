@@ -4,6 +4,13 @@ travelDivLoaded = false;
 albumsSetLoaded = false;
 galleryAstrahanLoaded = false;
 galleryGreeceLoaded = false;
+galleryAndorraLoaded = false;
+galleryMinskLoaded = false;
+galleryBalisingLoaded = false;
+galleryPhuketLoaded = false;
+galleryVeyzonaLoaded = false;
+gallerySpainLoaded = false;
+galleryIstambulLoaded = false;
 
 $('#sectionWeAre').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
     if (isInView && !introPageLoaded) {
@@ -46,3 +53,54 @@ $('#slideGreece').bind('inview', function(event, isInView, visiblePartX, visible
         galleryGreeceLoaded = true;
     }
 });
+
+$('#slideAndorra').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !galleryAndorraLoaded) {
+        $('#galleryAndorra').load("tgandorra.jsp");
+        galleryAndorraLoaded = true;
+    }
+});
+
+$('#slideMinsk').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !galleryMinskLoaded) {
+        $('#galleryMinsk').load("tgminsk.jsp");
+        galleryMinskLoaded = true;
+    }
+});
+
+$('#slideBalising').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !galleryBalisingLoaded) {
+        $('#galleryBalising').load("tgbalising.jsp");
+        galleryBalisingLoaded = true;
+    }
+});
+
+$('#slidePhuket').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !galleryPhuketLoaded) {
+        $('#galleryPhuket').load("tgphuket.jsp");
+        galleryPhuketLoaded = true;
+    }
+});
+
+$('#slideVeyzona').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !galleryVeyzonaLoaded) {
+        $('#galleryVeyzona').load("tgveyzona.jsp");
+        galleryVeyzonaLoaded = true;
+    }
+});
+
+$('#slideSpain').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !gallerySpainLoaded) {
+        $('#gallerySpain').load("tgspain.jsp");
+        gallerySpainLoaded = true;
+    }
+});
+
+$('#slideIstambul').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView && !galleryIstambulLoaded) {
+        $('#galleryIstambul').load("tgIstambul.jsp");
+        galleryIstambulLoaded = true;
+    }
+});
+
+

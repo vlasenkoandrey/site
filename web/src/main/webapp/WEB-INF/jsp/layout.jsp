@@ -75,15 +75,42 @@
             <div id="albumsSet"  style="margin-left: 40px; margin-right: 40px">
             </div>
         </div>
-        <div class="slide" id="slideAstrahan">
-            <div id="galleryAstrahan">
+        <div class="slide" id="slideBalising">
+            <div id="galleryBalising">
+            </div>
+        </div>
+        <div class="slide" id="slideAndorra">
+            <div id="galleryAndorra">
+            </div>
+        </div>
+        <div class="slide" id="slideMinsk">
+            <div id="galleryMinsk">
+            </div>
+        </div>
+        <div class="slide" id="slideIstambul">
+            <div id="galleryIstambul">
+            </div>
+        </div>
+        <div class="slide" id="slideVeyzona">
+            <div id="galleryVeyzona">
             </div>
         </div>
         <div class="slide" id="slideGreece">
             <div id="galleryGreece">
             </div>
         </div>
-        <div class="slide" id="slidePhuket"><h1>Пхукет</h1></div>
+        <div class="slide" id="slideSpain">
+            <div id="gallerySpain">
+            </div>
+        </div>
+        <div class="slide" id="slidePhuket">
+            <div id="galleryPhuket">
+            </div>
+        </div>
+        <div class="slide" id="slideAstrahan">
+            <div id="galleryAstrahan">
+            </div>
+        </div>
     </div>
     <div class="section" id="sectionAbout">
         <div class="slide" id="slidePolina"><h1>About Polina</h1></div>

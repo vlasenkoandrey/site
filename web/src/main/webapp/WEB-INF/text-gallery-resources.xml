@@ -7,17 +7,30 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
 
+    <import resource="gallery/andorra-resources.xml"/>
+    <import resource="gallery/balising-resources.xml"/>
+    <import resource="gallery/boats-resources.xml"/>
+    <import resource="gallery/istambul-resources.xml"/>
+    <import resource="gallery/minsk-resources.xml"/>
+    <import resource="gallery/phuket-resources.xml"/>
+    <import resource="gallery/rodos-resources.xml"/>
+    <import resource="gallery/spain-resources.xml"/>
+    <import resource="gallery/veyzona-resources.xml"/>
+
     <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="story">
         <property name="images">
             <array>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg value="1.jpg"/>
+                    <constructor-arg index="0" value="../resources/img/"/>
+                    <constructor-arg index="1" value="1.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg value="2.jpg"/>
+                    <constructor-arg index="0" value="../resources/img/"/>
+                    <constructor-arg index="1" value="2.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg value="3.jpg"/>
+                    <constructor-arg index="0" value="../resources/img/"/>
+                    <constructor-arg index="1" value="3.jpg"/>
                 </bean>
             </array>
         </property>
@@ -29,49 +42,6 @@
         <property name="text" value="story.txt"/>
     </bean>
 
-    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="astrahan">
-        <property name="images">
-            <array>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg value="1.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg value="2.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg value="3.jpg"/>
-                </bean>
-            </array>
-        </property>
-        <property name="videos">
-            <array>
-                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
-            </array>
-        </property>
-        <property name="text" value="astrahan.txt"/>
-    </bean>
-
-    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="greece">
-        <property name="images">
-            <array>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg value="1.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg value="2.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg value="3.jpg"/>
-                </bean>
-            </array>
-        </property>
-        <property name="videos">
-            <array>
-                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
-            </array>
-        </property>
-        <property name="text" value="astrahan.txt"/>
-    </bean>
 
 
     <bean id="resourceResolver" class="cc.vlasenko.site.TextGalleryResourceResolver">
@@ -95,46 +65,16 @@
                         </entry>
                     </util:map>
                 </entry>
-                <entry key="ASTRAHAN">
+                <entry key="ASTRAHAN" value-ref="boatsEntry"/>
+                <entry key="ANDORRA" value-ref="andorraEntry"/>
+                <entry key="BALISING" value-ref="balisingEntry"/>
+                <entry key="GREECE" value-ref="rodosEntry"/>
+                <entry key="PHUKET" value-ref="phuketEntry"/>
+                <entry key="SPAIN" value-ref="spainEntry"/>
+                <entry key="ISTAMBUL" value-ref="istambulEntry"/>
+                <entry key="VEYZONA" value-ref="veyzonaEntry"/>
+                <entry key="MINSK" value-ref="minskEntry"/>
 
-                    <util:map>
-                        <entry key="ru">
-                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
-                                <constructor-arg index="0" ref="astrahan"/>
-                                <constructor-arg index="1" value="ru/"/>
-                                <constructor-arg index="2" value="gallery/astrahan/"/>
-                            </bean>
-                        </entry>
-                        <entry key="en">
-                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
-                                <constructor-arg index="0" ref="astrahan"/>
-                                <constructor-arg index="1" value="en/"/>
-                                <constructor-arg index="2" value="gallery/astrahan/"/>
-                            </bean>
-                        </entry>
-                    </util:map>
-
-                </entry>
-                <entry key="GREECE">
-
-                    <util:map>
-                        <entry key="en">
-                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
-                                <constructor-arg index="0" ref="greece"/>
-                                <constructor-arg index="1" value="en/"/>
-                                <constructor-arg index="2" value="gallery/astrahan/"/>
-                            </bean>
-                        </entry>
-                        <entry key="ru">
-                            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
-                                <constructor-arg index="0" ref="greece"/>
-                                <constructor-arg index="1" value="ru/"/>
-                                <constructor-arg index="2" value="gallery/astrahan/"/>
-                            </bean>
-                        </entry>
-                    </util:map>
-
-                </entry>
             </util:map>
         </constructor-arg>
     </bean>

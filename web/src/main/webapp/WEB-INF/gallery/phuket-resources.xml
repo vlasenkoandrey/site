@@ -1,0 +1,103 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:map id="phuketEntry">
+        <entry key="ru">
+            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                <constructor-arg index="0" ref="phuket"/>
+                <constructor-arg index="1" value="ru/"/>
+                <constructor-arg index="2" value="gallery/phuket/"/>
+            </bean>
+        </entry>
+        <entry key="en">
+            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                <constructor-arg index="0" ref="phuket"/>
+                <constructor-arg index="1" value="en/"/>
+                <constructor-arg index="2" value="gallery/phuket/"/>
+            </bean>
+        </entry>
+    </util:map>
+
+    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="phuket">
+        <property name="images">
+            <array>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="1.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="2.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="3.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="4.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="5.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="6.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="7.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="8.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="9.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="10.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="11.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="12.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="13.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="14.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="15.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="16.jpg"/>
+                </bean>
+                <bean class="cc.vlasenko.site.model.ImageBean">
+                    <constructor-arg index="0" value="../resources/img/gallery/phuket/"/>
+                    <constructor-arg index="1" value="17.jpg"/>
+                </bean>
+            </array>
+        </property>
+        <property name="text" value="astrahan.txt"/>
+    </bean>
+
+</beans>

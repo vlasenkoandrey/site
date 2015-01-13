@@ -12,7 +12,7 @@
 </div>
 
 <div class="gallery">
-    <div class="fotorama" data-maxwidth=80%" data-maxhight="70%" data-ratio="4/3" data-nav="thumbs" data-allowfullscreen="true">
+    <div class="fotorama" data-width="80%" data-maxwidth=80%" data-maxheight="70%" data-ratio="4/3" data-nav="thumbs" data-allowfullscreen="true">
         <c:forEach items="${videos}" var="video">
             <a href="${video}">One</a>
         </c:forEach>
