@@ -120,8 +120,7 @@
 </div>
 <div class="share_button facebook" onclick="shareFb()"></div>
 <div class="share_button googleplus" onclick="shareGoog()"></div>
-<div class="share_button twitter" onclick="tweet()"></div>
-<div class="share_button linkedin" onclick="shareLinkedin('Andrey Vlasenko, Software Engineer')"></div>
+<div class="share_button twitter" onclick="tweet('familyvlasenko')"></div>
 <div class="share_button vk" onclick="shareVk()"></div>
 <div class="language" onchange="language()">
     <select id="selectedLanguage">

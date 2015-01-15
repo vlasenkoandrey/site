@@ -46,6 +46,7 @@ html, body {
 }
 .fp-section.fp-table, .fp-slide.fp-table {
     display: table;
+    table-layout:fixed;
     width: 100%;
 }
 .fp-tableCell {
@@ -130,8 +131,8 @@ html, body {
 }
 #fp-nav ul,
 .fp-slidesNav ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 #fp-nav ul li,
 .fp-slidesNav ul li {

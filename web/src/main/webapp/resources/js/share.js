@@ -10,8 +10,8 @@ function shareFb() {
     window.location.href = fbShareUrl;
 }
 
-function tweet() {
-    window.location.href = "https://twitter.com/share?hashtags=familyvlasenko";
+function tweet(hashtag) {
+    window.location.href = "https://twitter.com/share?hashtags=" + hashtag;
 }
 
 function shareLinkedin(title) {

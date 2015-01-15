@@ -13,6 +13,8 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resources/js/share.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/css/share.css"/>
 
     <script type="text/javascript" src="../resources/inview/inview.min.js"></script>
 
@@ -68,6 +70,12 @@
             </div>
         </div>
     </div>
+    <div class="share_button facebook" onclick="shareFb()"></div>
+    <div class="share_button googleplus" onclick="shareGoog()"></div>
+    <div class="share_button twitter" onclick="tweet('softwareengineer')"></div>
+    <div class="share_button linkedin" onclick="shareLinkedin('Polina Vlasenko, Software Engineer')"></div>
+    <div class="share_button vk" onclick="shareVk()"></div>
+
     <script type="text/javascript" src="../../resources/js/polina_layout.js"></script>
 </div>
 </body>

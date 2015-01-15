@@ -1,5 +1,5 @@
 /**
- * fullPage 2.5.1
+ * fullPage 2.5.3
  * https://github.com/alvarotrigo/fullPage.js
  * MIT licensed
  *
@@ -39,8 +39,10 @@
 			//Accessibility
 			'keyboardScrolling': true,
 			'animateAnchor': true,
+			'recordHistory': true,
 
 			//design
+			'controlArrows': true,
 			'controlArrowColor': '#fff',
 			"verticalCentered": true,
 			'resize': true,
@@ -86,6 +88,8 @@
 					'height' : '100%'
 				});
 
+				$.fn.fullpage.setRecordHistory(options.recordHistory);
+
 				//for IE touch devices
 				container.css({
 					'-ms-touch-action': 'none',
@@ -103,6 +107,8 @@
 					'height' : 'initial'
 				});
 
+				$.fn.fullpage.setRecordHistory(false);
+
 				//for IE touch devices
 				container.css({
 					'-ms-touch-action': '',
@@ -115,6 +121,13 @@
 				$('html, body').scrollTop(element.position().top);
 			}
 
+		};
+
+		/**
+		* Defines wheter to record the history for each hash change in the URL.
+		*/
+		$.fn.fullpage.setRecordHistory = function(value){
+			recordHistory = value;
 		};
 
 		/**
@@ -137,9 +150,18 @@
 
 		/**
 		* Adds or remove the possiblity of scrolling through sections by using the mouse wheel/trackpad or touch gestures.
+		* Optionally a second parameter can be used to specify the direction for which the action will be applied.
+		*
+		* @param directions string containing the direction or directions separated by comma.
 		*/
-		$.fn.fullpage.setAllowScrolling = function (value){
-			if(value){
+		$.fn.fullpage.setAllowScrolling = function (value, directions){
+			if(typeof directions != 'undefined'){
+				directions = directions.replace(' ', '').split(',');
+				$.each(directions, function (index, direction){
+					setIsScrollable(value, direction);
+				});
+			}
+			else if(value){
 				$.fn.fullpage.setMouseWheelScrolling(true);
 				addTouchHandler();
 			}else{
@@ -278,6 +300,8 @@
 		var lastScrolledSlide;
 		var nav;
 		var wrapperSelector = 'fullpage-wrapper';
+		var isScrollAllowed = { 'up':true, 'down':true, 'left':true, 'right':true };
+		var recordHistory = options.recordHistory;
 
 		$.fn.fullpage.setAllowScrolling(true);
 
@@ -347,17 +371,10 @@
 				slides.parent().wrap('<div class="fp-slides" />');
 
 				$(this).find('.fp-slidesContainer').css('width', sliderWidth + '%');
-				$(this).find('.fp-slides').after('<div class="fp-controlArrow fp-prev"></div><div class="fp-controlArrow fp-next"></div>');
 
-				if(options.controlArrowColor!='#fff'){
-					$(this).find('.fp-controlArrow.fp-next').css('border-color', 'transparent transparent transparent '+options.controlArrowColor);
-					$(this).find('.fp-controlArrow.fp-prev').css('border-color', 'transparent '+ options.controlArrowColor + ' transparent transparent');
+				if(options.controlArrows){
+					createSlideArrows($(this));
 				}
-
-				if(!options.loopHorizontal){
-					$(this).find('.fp-controlArrow.fp-prev').hide();
-				}
-
 
 				if(options.slidesNavigation){
 					addSlidesNavigation($(this), numSlides);
@@ -466,6 +483,22 @@
 
 
 		/**
+		* Creates the control arrows for the given section
+		*/
+		function createSlideArrows(section){
+			section.find('.fp-slides').after('<div class="fp-controlArrow fp-prev"></div><div class="fp-controlArrow fp-next"></div>');
+
+			if(options.controlArrowColor!='#fff'){
+				section.find('.fp-controlArrow.fp-next').css('border-color', 'transparent transparent transparent '+options.controlArrowColor);
+				section.find('.fp-controlArrow.fp-prev').css('border-color', 'transparent '+ options.controlArrowColor + ' transparent transparent');
+			}
+
+			if(!options.loopHorizontal){
+				section.find('.fp-controlArrow.fp-prev').hide();
+			}
+		}
+
+		/**
 		* Creates a vertical navigation bar.
 		*/
 		function addVerticalNavigation(){
@@ -546,13 +579,20 @@
 					var leavingSection = $('.fp-section.active').index('.fp-section') + 1;
 					var yMovement = getYmovement(currentSection);
 					var anchorLink  = currentSection.data('anchor');
+					var sectionIndex = currentSection.index('.fp-section') + 1;
+					var activeSlide = currentSection.find('.fp-slide.active');
+
+					if(activeSlide.length){
+						var slideAnchorLink = activeSlide.data('anchor');
+						var slideIndex = activeSlide.index();
+					}
 
 					currentSection.addClass('active').siblings().removeClass('active');
 
 					if(!isMoving){
-						$.isFunction( options.onLeave ) && options.onLeave.call( this, leavingSection, (currentSection.index('.fp-section') + 1), yMovement);
+						$.isFunction( options.onLeave ) && options.onLeave.call( this, leavingSection, sectionIndex, yMovement);
 
-						$.isFunction( options.afterLoad ) && options.afterLoad.call( this, anchorLink, (currentSection.index('.fp-section') + 1));
+						$.isFunction( options.afterLoad ) && options.afterLoad.call( this, anchorLink, sectionIndex);
 					}
 
 					activateMenuAndNav(anchorLink, 0);
@@ -561,7 +601,7 @@
 						//needed to enter in hashChange event when using the menu with anchor links
 						lastScrolledDestiny = anchorLink;
 
-						location.hash = anchorLink;
+						setState(slideIndex, slideAnchorLink, anchorLink, sectionIndex);
 					}
 
 					//small timeout in order to avoid entering in hashChange event when scrolling is not finished yet
@@ -603,6 +643,10 @@
 		* by 'automatically' scrolling a section or by using the default and normal scrolling.
 		*/
 		function scrolling(type, scrollable){
+			if (!isScrollAllowed[type]){
+				return;
+			}
+
 			if(type == 'down'){
 				var check = 'bottom';
 				var scrollSection = $.fn.fullpage.moveSectionDown;
@@ -662,9 +706,13 @@
 					    //is the movement greater than the minimum resistance to scroll?
 					    if (Math.abs(touchStartX - touchEndX) > ($(window).width() / 100 * options.touchSensitivity)) {
 					        if (touchStartX > touchEndX) {
-					            $.fn.fullpage.moveSlideRight(); //next
+					        	if(isScrollAllowed.right){
+					            	$.fn.fullpage.moveSlideRight(); //next
+					            }
 					        } else {
-					            $.fn.fullpage.moveSlideLeft(); //prev
+					        	if(isScrollAllowed.left){
+					            	$.fn.fullpage.moveSlideLeft(); //prev
+					            }
 					        }
 					    }
 					}
@@ -846,7 +894,7 @@
 			//more than once if the page is scrolling
 			isMoving = true;
 
-			setURLHash(slideIndex, slideAnchorLink, v.anchorLink, v.sectionIndex);
+			setState(slideIndex, slideAnchorLink, v.anchorLink, v.sectionIndex);
 
 			//callback (onLeave) if the site is not just resizing and readjusting the slides
 			$.isFunction(options.onLeave) && !v.localIsResizing && options.onLeave.call(this, v.leavingSection, (v.sectionIndex + 1), v.yMovement);
@@ -1144,7 +1192,7 @@
 				slideAnchor = slideIndex;
 			}
 
-			if(!options.loopHorizontal){
+			if(!options.loopHorizontal && options.controlArrows){
 				//hidding it for the fist slide, showing for the rest
 				section.find('.fp-controlArrow.fp-prev').toggle(slideIndex!=0);
 
@@ -1154,7 +1202,7 @@
 
 			//only changing the URL if the slides are in the current section (not for resize re-adjusting)
 			if(section.hasClass('active')){
-				setURLHash(slideIndex, slideAnchor, anchorLink, sectionIndex);
+				setState(slideIndex, slideAnchor, anchorLink, sectionIndex);
 			}
 
 			var afterSlideLoads = function(){
@@ -1242,21 +1290,16 @@
 	    }
 
 	    /**
-		* Toogles transition animations for the given element
+		* Adds transition animations for the given element
 		*/
-		function addAnimation(element, adding){
+		function addAnimation(element){
 			var transition = 'all ' + options.scrollingSpeed + 'ms ' + options.easingcss3;
 
-			if(adding){
-				element.removeClass('fp-notransition');
-				return element.css({
-					'-webkit-transition': transition,
-         			'transition': transition
-           		});
-			}
-
-			//removing the animation
-			return removeAnimation(element);
+			element.removeClass('fp-notransition');
+			return element.css({
+				'-webkit-transition': transition,
+     			'transition': transition
+       		});
 		}
 
 		/**
@@ -1440,9 +1483,18 @@
 		* Adds a css3 transform property to the container class with or without animation depending on the animated param.
 		*/
 		function transformContainer(translate3d, animated){
-			addAnimation(container, animated);
+			if(animated){
+				addAnimation(container);
+			}else{
+				removeAnimation(container);
+			}
 
 			container.css(getTransforms(translate3d));
+
+			//syncronously removing the class after the animation has been applied.
+			setTimeout(function(){
+				container.removeClass('fp-notransition');
+			},10)
 		}
 
 
@@ -1513,9 +1565,10 @@
 
 
 		/**
-		* Sets the URL hash for a section with slides
+		* Sets the state of the website depending on the active section/slide.
+		* It changes the URL hash when needed and updates the body class.
 		*/
-		function setURLHash(slideIndex, slideAnchor, anchorLink, sectionIndex){
+		function setState(slideIndex, slideAnchor, anchorLink, sectionIndex){
 			var sectionHash = '';
 
 			if(options.anchors.length){
@@ -1532,17 +1585,17 @@
 					}
 
 					lastScrolledSlide = slideAnchor;
-					location.hash = sectionHash + '/' + slideAnchor;
+					setUrlHash(sectionHash + '/' + slideAnchor);
 
 				//first slide won't have slide anchor, just the section one
 				}else if(typeof slideIndex !== 'undefined'){
 					lastScrolledSlide = slideAnchor;
-					location.hash = anchorLink;
+					setUrlHash(anchorLink);
 				}
 
 				//section without slides
 				else{
-					location.hash = anchorLink;
+					setUrlHash(anchorLink);
 				}
 
 				setBodyClass(location.hash);
@@ -1552,6 +1605,23 @@
 			}
 			else{
 				setBodyClass(String(sectionIndex));
+			}
+		}
+
+		/**
+		* Sets the URL hash.
+		*/
+		function setUrlHash(url){
+			if(recordHistory){
+				location.hash = url;
+			}else{
+				//Mobile Chrome doesn't work the normal way, so... lets use HTML5 for phones :)
+				if(isTouchDevice || isTouch){
+					history.replaceState(undefined, undefined, "#" + url)
+				}else{
+					var baseUrl = window.location.href.split('#')[0];
+					window.location.replace( baseUrl + '#' + url );
+				}
 			}
 		}
 
@@ -1603,7 +1673,7 @@
 
 
 		/**
-		* Removes the auto scrolling action fired by the mouse wheel and tackpad.
+		* Removes the auto scrolling action fired by the mouse wheel and trackpad.
 		* After this function is called, the mousewheel and trackpad movements won't scroll through sections.
 		*/
 		function removeMouseWheelHandler(){
@@ -1617,7 +1687,7 @@
 
 
 		/**
-		* Adds the auto scrolling action for the mouse wheel and tackpad.
+		* Adds the auto scrolling action for the mouse wheel and trackpad.
 		* After this function is called, the mousewheel and trackpad movements will scroll through sections
 		*/
 		function addMouseWheelHandler(){
@@ -1716,6 +1786,16 @@
 				'-ms-transform':translate3d,
 				'transform': translate3d
 			};
+		}
+
+		function setIsScrollable(value, direction){
+			switch (direction){
+				case 'up': isScrollAllowed.up = value; break;
+				case 'down': isScrollAllowed.down = value; break;
+				case 'left': isScrollAllowed.left = value; break;
+				case 'right': isScrollAllowed.right = value; break;
+				case 'all': $.fn.fullpage.setAllowScrolling(value);
+			}
 		}
 
 
