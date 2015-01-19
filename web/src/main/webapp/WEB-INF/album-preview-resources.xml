@@ -68,7 +68,7 @@
         <bean id="balising_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="balising"/>
             <constructor-arg index="1" value="../resources/img/gallery/balising/ic/1.jpg"/>
-            <constructor-arg index="2" value="Вали и Сингапур"/>
+            <constructor-arg index="2" value="Бали и Сингапур"/>
             <constructor-arg index="3" value="#pageGallery/1"/>
         </bean>
         <bean id="andorra_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
