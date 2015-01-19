@@ -6,3 +6,7 @@
     padding: 20px;
     z-index: 100;
 }
+
+.language select{
+    background: #d2c9c4;
+}

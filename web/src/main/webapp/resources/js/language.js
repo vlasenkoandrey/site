@@ -1,4 +1,4 @@
-function language() {
+function setLanguage() {
     var languageSelect = document.getElementById('selectedLanguage').value;
     $.post('language/set', {language: languageSelect });
     location.reload();

@@ -122,10 +122,10 @@
 <div class="share_button googleplus" onclick="shareGoog()"></div>
 <div class="share_button twitter" onclick="tweet('familyvlasenko')"></div>
 <div class="share_button vk" onclick="shareVk()"></div>
-<div class="language" onchange="language()">
+<div class="language" onchange="setLanguage()">
     <select id="selectedLanguage">
-        <option id="english" value="en">English</option>
-        <option id="russian" value="ru">Russian</option>
+        <option id="english" class="langEn" value="en">English</option>
+        <option id="russian" class="langRu" value="ru">Russian</option>
     </select>
 </div>
 
