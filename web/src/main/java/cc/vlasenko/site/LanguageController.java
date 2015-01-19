@@ -6,6 +6,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @Controller
@@ -17,6 +18,13 @@ public class LanguageController extends LocalisingController {
 		if (!StringUtils.isEmpty(language)) {
 			modelMap.addAttribute("language", language);
 		}
+	}
+
+	@RequestMapping("/language/get")
+	@ResponseStatus(value = HttpStatus.OK)
+	@ResponseBody
+	public String getLanguage(ModelMap modelMap) {
+		return  (String) modelMap.get("language");
 	}
 
 }

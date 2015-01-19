@@ -21,7 +21,7 @@ public class AlbumPreviewController extends LocalisingController {
 
 	@RequestMapping("/albums_set.jsp")
 	public void getLayout(ModelMap modelMap) {
-		List<AlbumPreviewBean> resultList = albumPreviewBeans.get(getLanguage(modelMap));
+		List<AlbumPreviewBean> resultList = albumPreviewBeans.get(getLanguageOrDefault(modelMap));
 		if (resultList == null){
 			resultList = albumPreviewBeans.get("en");
 		}

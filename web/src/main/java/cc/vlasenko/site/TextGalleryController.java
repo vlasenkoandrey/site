@@ -22,7 +22,7 @@ public class TextGalleryController extends LocalisingController {
 
 	@RequestMapping("/tg{resource}.jsp")
 	public String getStory(ModelMap modelMap, @PathVariable String resource) {
-		String language = getLanguage(modelMap);
+		String language = getLanguageOrDefault(modelMap);
 		TextGalleryResourceContainer resourceContainer = resourceResolver.getResourceBean(valueOf(resource.toUpperCase()), language);
 		TextGalleryResourceBean resourceBean = resourceContainer.getTextGalleryResourceBean();
 		modelMap.addAttribute("text", URL_PREFIX_TEXT + resourceContainer.getResourcePrefix() + resourceContainer.getLocalePrefix() + resourceBean.getText());

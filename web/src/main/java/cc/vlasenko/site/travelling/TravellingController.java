@@ -21,7 +21,7 @@ public class TravellingController extends LocalisingController{
 
 	@RequestMapping("/travel.jsp")
 	public String getTravellingLayout(ModelMap modelMap) {
-		String path = container.get(getLanguage(modelMap));
+		String path = container.get(getLanguageOrDefault(modelMap));
 		if (StringUtils.isEmpty(path)) {
 			path = "en";
 		}
