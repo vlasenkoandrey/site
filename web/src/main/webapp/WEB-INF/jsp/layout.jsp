@@ -31,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/share.css"/>
 
     <script src="../resources/js/language.js"></script>
+    <script src="../resources/js/layout.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             detectLanguage();
@@ -43,8 +44,9 @@
                 menu: '#menu',
                 css3: true
             });
+            $(window).resize();
         });
-</script>
+    </script>
 
 </head>
 
@@ -129,5 +131,4 @@
     </select>
 </div>
 
-<script src="../resources/js/layout.js"></script>
 </body>

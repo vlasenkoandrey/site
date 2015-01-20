@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="../../resources/css/andrey/experiencePage.css"/>
     <link rel="stylesheet" type="text/css" href="../../resources/customScrollbar/jquery.mCustomScrollbar.css">
     <script src="../../resources/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/polina_layout.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -37,6 +38,7 @@
                 menu: '#menu',
                 css3: true
             });
+            $(window).resize();
         });
     </script>
 
@@ -77,6 +79,5 @@
     <div class="share_button linkedin" onclick="shareLinkedin('Polina Vlasenko, Software Engineer')"></div>
     <div class="share_button vk" onclick="shareVk()"></div>
 
-    <script type="text/javascript" src="../../resources/js/polina_layout.js"></script>
 </div>
 </body>

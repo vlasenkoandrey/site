@@ -12,95 +12,111 @@ galleryVeyzonaLoaded = false;
 gallerySpainLoaded = false;
 galleryIstambulLoaded = false;
 
-$('#sectionWeAre').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !introPageLoaded) {
-        $('#introPage').load("intro.jsp");
-        introPageLoaded = true;
-    }
-});
+$(document).ready(function() {
 
-$('#sectionTheStory').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !storyDivLoaded) {
-        $('#storyDiv').load("tgstory.jsp");
-        storyDivLoaded = true;
-    }
-});
+    $('#sectionWeAre').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !introPageLoaded) {
+            $('#introPage').load("intro.jsp");
+            $(window).resize();
+            introPageLoaded = true;
+        }
+    });
 
-$('#sectionTravelling').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !travelDivLoaded) {
-        $('#travelDiv').load("travel.jsp");
-        travelDivLoaded = true;
-    }
-});
+    $('#sectionTheStory').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !storyDivLoaded) {
+            $('#storyDiv').load("tgstory.jsp");
+            $(window).resize();
+            storyDivLoaded = true;
+        }
+    });
 
-$('#slideAlbums').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !albumsSetLoaded) {
-        $('#albumsSet').load("albums_set.jsp");
-        albumsSetLoaded = true;
-    }
-});
+    $('#sectionTravelling').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !travelDivLoaded) {
+            $('#travelDiv').load("travel.jsp");
+            $(window).resize();
+            travelDivLoaded = true;
+        }
+    });
 
-$('#slideAstrahan').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !galleryAstrahanLoaded) {
-        $('#galleryAstrahan').load("tgastrahan.jsp");
-        galleryAstrahanLoaded = true;
-    }
-});
+    $('#slideAlbums').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !albumsSetLoaded) {
+            $('#albumsSet').load("albums_set.jsp");
+            $(window).resize();
+            albumsSetLoaded = true;
+        }
+    });
 
-$('#slideGreece').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !galleryGreeceLoaded) {
-        $('#galleryGreece').load("tggreece.jsp");
-        galleryGreeceLoaded = true;
-    }
-});
+    $('#slideAstrahan').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !galleryAstrahanLoaded) {
+            $('#galleryAstrahan').load("tgastrahan.jsp");
+            $(window).resize();
+            galleryAstrahanLoaded = true;
+        }
+    });
 
-$('#slideAndorra').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !galleryAndorraLoaded) {
-        $('#galleryAndorra').load("tgandorra.jsp");
-        galleryAndorraLoaded = true;
-    }
-});
+    $('#slideGreece').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !galleryGreeceLoaded) {
+            $('#galleryGreece').load("tggreece.jsp");
+            $(window).resize();
+            galleryGreeceLoaded = true;
+        }
+    });
 
-$('#slideMinsk').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !galleryMinskLoaded) {
-        $('#galleryMinsk').load("tgminsk.jsp");
-        galleryMinskLoaded = true;
-    }
-});
+    $('#slideAndorra').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !galleryAndorraLoaded) {
+            $('#galleryAndorra').load("tgandorra.jsp");
+            $(window).resize();
+            galleryAndorraLoaded = true;
+        }
+    });
 
-$('#slideBalising').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !galleryBalisingLoaded) {
-        $('#galleryBalising').load("tgbalising.jsp");
-        galleryBalisingLoaded = true;
-    }
-});
+    $('#slideMinsk').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !galleryMinskLoaded) {
+            $('#galleryMinsk').load("tgminsk.jsp");
+            $(window).resize();
+            galleryMinskLoaded = true;
+        }
+    });
 
-$('#slidePhuket').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !galleryPhuketLoaded) {
-        $('#galleryPhuket').load("tgphuket.jsp");
-        galleryPhuketLoaded = true;
-    }
-});
+    $('#slideBalising').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !galleryBalisingLoaded) {
+            $('#galleryBalising').load("tgbalising.jsp");
+            $(window).resize();
+            galleryBalisingLoaded = true;
+        }
+    });
 
-$('#slideVeyzona').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !galleryVeyzonaLoaded) {
-        $('#galleryVeyzona').load("tgveyzona.jsp");
-        galleryVeyzonaLoaded = true;
-    }
-});
+    $('#slidePhuket').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !galleryPhuketLoaded) {
+            $('#galleryPhuket').load("tgphuket.jsp");
+            $(window).resize();
+            galleryPhuketLoaded = true;
+        }
+    });
 
-$('#slideSpain').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !gallerySpainLoaded) {
-        $('#gallerySpain').load("tgspain.jsp");
-        gallerySpainLoaded = true;
-    }
-});
+    $('#slideVeyzona').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !galleryVeyzonaLoaded) {
+            $('#galleryVeyzona').load("tgveyzona.jsp");
+            $(window).resize();
+            galleryVeyzonaLoaded = true;
+        }
+    });
 
-$('#slideIstambul').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-    if (isInView && !galleryIstambulLoaded) {
-        $('#galleryIstambul').load("tgIstambul.jsp");
-        galleryIstambulLoaded = true;
-    }
+    $('#slideSpain').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !gallerySpainLoaded) {
+            $('#gallerySpain').load("tgspain.jsp");
+            $(window).resize();
+            gallerySpainLoaded = true;
+        }
+    });
+
+    $('#slideIstambul').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !galleryIstambulLoaded) {
+            $('#galleryIstambul').load("tgIstambul.jsp");
+            $(window).resize();
+            galleryIstambulLoaded = true;
+        }
+    });
 });
 
 
