@@ -1,19 +1,19 @@
-#sbtPage{
+#slideSbt{
     background: url("../img/andrey/sber_b.png") repeat;
-    background-size: 7%;
+    background-size: 10%;
 }
 
-#hflabsPage{
+#slideHflabs{
     background: url("../img/andrey/hflabs_b.png") repeat;
-    background-size: 15%;
+    background-size: 20%;
 }
 
-#qiwiWalletPage{
+#slideQiwiWallet{
     background: url("../img/andrey/qiwi_b.png") repeat;
-    background-size: 7%;
+    background-size: 10%;
 }
 
-#educationPage{
+#sectionEducation{
      background: url("../img/andrey/msu_b.png") repeat;
-     background-size: 7%;
+     background-size: 10%;
  }
