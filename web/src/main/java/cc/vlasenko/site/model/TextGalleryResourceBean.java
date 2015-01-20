@@ -1,8 +1,8 @@
 package cc.vlasenko.site.model;
 
 public class TextGalleryResourceBean {
-    private ImageBean[] images;
-    private String[] videos;
+    private ImageBean[] images = new ImageBean[0];
+    private String[] videos = new String[0];
     private String text;
 
     public ImageBean[] getImages() {
