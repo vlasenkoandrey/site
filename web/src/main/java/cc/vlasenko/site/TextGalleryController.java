@@ -1,6 +1,8 @@
 package cc.vlasenko.site;
 
 import cc.vlasenko.site.model.TextGalleryResourceBean;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -12,6 +14,7 @@ import static cc.vlasenko.site.model.TextGalleryResource.valueOf;
 
 @Controller
 public class TextGalleryController extends LocalisingController {
+	private final static Logger logger = LoggerFactory.getLogger(TextGalleryController.class);
 
 	private ResourceResolver resourceResolver;
 
@@ -22,6 +25,7 @@ public class TextGalleryController extends LocalisingController {
 
 	@RequestMapping("/tg{resource}.jsp")
 	public String getStory(ModelMap modelMap, @PathVariable String resource) {
+		logger.info("request {}, model {}", resource, modelMap);
 		String language = getLanguageOrDefault(modelMap);
 		TextGalleryResourceContainer resourceContainer = resourceResolver.getResourceBean(valueOf(resource.toUpperCase()), language);
 		TextGalleryResourceBean resourceBean = resourceContainer.getTextGalleryResourceBean();
