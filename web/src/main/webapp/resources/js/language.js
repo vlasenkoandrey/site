@@ -1,6 +1,6 @@
 function setLanguage() {
     var languageSelect = document.getElementById('selectedLanguage').value;
-    $.post('language/set', {language: languageSelect });
+    $.post('language/set', {vlanguage: languageSelect });
     location.reload();
 
 }
@@ -20,10 +20,10 @@ function detectLanguage() {
                 } else if (userLang != null && userLang.match(/.*ru.*/)) {
                     boxValue = 'ru'
                 }
-                $.post('language/set', {language: boxValue});
+                $.post('language/set', {vlanguage: boxValue});
                 if (boxValue =='ru') {
                     //по умолчанию английский, поэтому перезагружаем
-                    location.reload();
+//                    location.reload();
                 }
             }
             $("select#selectedLanguage").val(boxValue);

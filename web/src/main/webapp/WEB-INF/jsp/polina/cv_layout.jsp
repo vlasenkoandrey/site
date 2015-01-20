@@ -15,6 +15,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../resources/js/share.js"></script>
     <link rel="stylesheet" type="text/css" href="../resources/css/share.css"/>
+    <link rel="stylesheet" type="text/css" href="../resources/css/polina_cv.css"/>
 
     <script type="text/javascript" src="../resources/inview/inview.min.js"></script>
 
