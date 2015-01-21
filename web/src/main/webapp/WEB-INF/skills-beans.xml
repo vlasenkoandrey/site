@@ -38,30 +38,28 @@
 
     <util:list id="polinaSkills">
         <value>Java</value>
-        <value>Oracle</value>
         <value>Spring</value>
-        <value>JDBC</value>
-        <value>JMS</value>
+        <value>Google guice</value>
+        <value>Servlets</value>
+        <value>Rest</value>
+        <value>Resteasy</value>
+        <value>Oracle</value>
+        <value>Cassandra</value>
+        <value>Sql</value>
+        <value>JUnit</value>
+        <value>TestNG</value>
+        <value>Mockito</value>
         <value>Concurrency</value>
         <value>Multithreading</value>
-        <value>Collections</value>
-        <value>Tomcat</value>
-        <value>Jetty</value>
-        <value>Intellij Idea</value>
-        <value>Eclipse</value>
-        <value>HTTP</value>
-        <value>HTTPS</value>
         <value>Maven</value>
-        <value>Gradle</value>
-        <value>XML</value>
-        <value>SQL</value>
+        <value>JMX</value>
         <value>Git</value>
-        <value>Subversion</value>
-        <value>Servlets</value>
-        <value>SOAP</value>
-        <value>REST</value>
-        <value>Coherence</value>
-        <value>Mockito</value>
-        <value>ActiveMQ</value>
+        <value>Collections</value>
+        <value>TeamCity</value>
+        <value>XML</value>
+        <value>jdbc</value>
+        <value>Unix shell</value>
+        <value>nio</value>
+        <value>log4j</value>
     </util:list>
 </beans>
