@@ -78,10 +78,10 @@
             </div>
         </div>
     </div>
-    <div class="share_button facebook" onclick="shareFb()"></div>
-    <div class="share_button googleplus" onclick="shareGoog()"></div>
+    <div class="share_button facebook" onclick="shareFb('http://andrey.vlasenko.cc/', '618040598339952', 'Andrey Vlasenko', 'Software Engineer')"></div>
+    <div class="share_button googleplus" onclick="shareGoog('http://andrey.vlasenko.cc/')"></div>
     <div class="share_button twitter" onclick="tweet('softwareengineer')"></div>
-    <div class="share_button linkedin" onclick="shareLinkedin('Andrey Vlasenko, Software Engineer')"></div>
-    <div class="share_button vk" onclick="shareVk()"></div>
+    <div class="share_button linkedin" onclick="shareLinkedin('http://andrey.vlasenko.cc/', 'Andrey Vlasenko, Software Engineer')"></div>
+    <div class="share_button vk" onclick="shareVk('http://andrey.vlasenko.cc/', 'http://andrey.vlasenko.cc/resources/img/share/andreyShare.png')"></div>
 </div>
 </body>
