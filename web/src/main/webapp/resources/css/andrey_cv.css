@@ -1,3 +1,9 @@
+#sectionSkills {
+    background: url("../img/andrey/mk6.png") repeat;
+    background-color: #f6f6f6;
+    background-size: 20%;
+}
+
 #slideSbt{
     background: url("../img/andrey/sber_b.png") repeat;
     background-size: 10%;

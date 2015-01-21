@@ -23,7 +23,7 @@
 
 <script>
     $('#myCanvas').tagcanvas({
-        textColour : '#1B3970',
+        textColour : '#C64409',
         maxSpeed : 0.09,
         depth : 0.75,
         textHeight : 20,
