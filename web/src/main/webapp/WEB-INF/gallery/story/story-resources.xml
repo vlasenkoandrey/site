@@ -77,6 +77,11 @@
                 </bean>
             </array>
         </property>
+        <property name="videos">
+            <array>
+                <value>http://youtu.be/9OvEY0AoWfk</value>
+            </array>
+        </property>
         <property name="text" value="story.txt"/>
     </bean>
 
