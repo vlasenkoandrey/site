@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class QiwiLeadController {
     @RequestMapping("/polina/qiwilead.jsp")
     public String getQiwiLead(ModelMap modelMap) {
-        modelMap.addAttribute("text", "../resources/text/story.txt");
+        modelMap.addAttribute("text", "../resources/text/polina/ru/qiwilead.txt");
         modelMap.addAttribute("exp", "qiwilead");
         modelMap.addAttribute("photo", "polinaQiwiLeadPhoto");
         return "andrey/rightExperiencePage";
