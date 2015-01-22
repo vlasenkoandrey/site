@@ -4,17 +4,12 @@
 }
 
 
-#qiwiLeadPage{
+#sectionExperience{
     background: url("../img/polina/qiwi_b.png") repeat;
     background-size: 10%;
 }
 
-#slideQiwi{
-    background: url("../img/polina/qiwi_b.png") repeat;
-    background-size: 10%;
-}
-
-#educationPage{
+#sectionEducation{
     background: url("../img/andrey/msu_b.png") repeat;
     background-size: 10%;
 }
