@@ -13,7 +13,7 @@ $(document).ready(function() {
             $('#storyDiv').load("tgstory.jsp", function() {
                 setTimeout(function(){
                     $(window).resize();
-                }, 10);
+                }, 100);
             });
         }
     });
