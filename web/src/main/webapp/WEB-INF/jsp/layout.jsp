@@ -38,7 +38,7 @@
         $(document).ready(function() {
             detectLanguage();
             $('#fullpage').fullpage({
-                anchors: ['pageWeAre', 'pageTheStory', 'pageTravelling', 'pageGallery', 'pageAbout'],
+                anchors: ['pageWeAre', 'pageTheStory', 'pageTravelling', 'pageGallery', 'pageJob'],
                 verticalCentered: true,
                 slidesNavigation: true,
                 loopHorizontal: false,
@@ -58,7 +58,7 @@
     <li data-menuanchor="pageTheStory"><a href="#pageTheStory">The Story</a></li>
     <li data-menuanchor="pageTravelling"><a href="#pageTravelling">Travelling</a></li>
     <li data-menuanchor="pageGallery"><a href="#pageGallery">Gallery</a></li>
-    <li data-menuanchor="pageAbout"><a href="#pageAbout/1">About us</a></li>
+    <li data-menuanchor="pageJob"><a href="#pageJob">What we do</a></li>
 </ul>
 <div id="fullpage">
 
@@ -116,10 +116,9 @@
             </div>
         </div>
     </div>
-    <div class="section" id="sectionAbout">
-        <div class="slide" id="slidePolina"><h1>About Polina</h1></div>
-        <div class="slide active" id="slideUs"><h1>About us</h1></div>
-        <div class="slide" id="slideAndrey"><h1>About Andrey</h1></div>
+    <div class="section" id="sectionJob">
+        <div id="jobDiv">
+        </div>
     </div>
 </div>
 <div class="share_button facebook" onclick="shareFb('http://vlasenko.cc/', '1534328526837006', 'Vlasenko Family Site', 'Andrey & Polina')"></div>
@@ -132,5 +131,14 @@
         <option id="russian" class="langRu" value="ru">Russian</option>
     </select>
 </div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-58829020-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 </body>

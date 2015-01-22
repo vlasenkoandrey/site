@@ -11,6 +11,7 @@ galleryPhuketLoaded = false;
 galleryVeyzonaLoaded = false;
 gallerySpainLoaded = false;
 galleryIstambulLoaded = false;
+jobDivLoaded = false;
 
 $(document).ready(function() {
 
@@ -115,6 +116,14 @@ $(document).ready(function() {
             $('#galleryIstambul').load("tgIstambul.jsp");
             $(window).resize();
             galleryIstambulLoaded = true;
+        }
+    });
+
+    $('#sectionJob').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView && !jobDivLoaded) {
+            $('#jobDiv').load("job.jsp");
+            $(window).resize();
+            jobDivLoaded = true;
         }
     });
 });

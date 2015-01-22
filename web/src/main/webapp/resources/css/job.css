@@ -1,0 +1,49 @@
+.textBoxBgJob {
+    position: relative;
+    background-color: #d3c7bf;
+    border-radius: 14px;
+    opacity: 0.70;
+    filter: "alpha(opacity=60)";
+    -ms-filter: "alpha(opacity=60)";
+    width: 80%;
+    height: 120px;
+    top: 50px;
+    left: 10%
+}
+
+.contentTextJob {
+    position: relative;
+    top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 90px;
+    font-size: 15px;
+    color: #505050;
+    line-height: 1.35em;
+    overflow: hidden;
+}
+
+.polinaWelcome {
+    display: inline-block;
+    background: url("../img/polina/welcome.png") right center no-repeat;
+    background-size: auto 500px;
+    margin-top: 50px;
+    height: 500px;
+    width: 90%;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.andreyWelcome {
+    display: inline-block;
+    background: url("../img/andrey/welcome.png") left center no-repeat;
+    background-size: auto 500px;
+    margin-top: 50px;
+    height: 500px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: 0;
+    cursor: pointer;
+}
