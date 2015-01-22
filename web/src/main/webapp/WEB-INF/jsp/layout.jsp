@@ -36,7 +36,7 @@
     <script src="../resources/js/layout.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            detectLanguage();
+//            detectLanguage();
             $('#fullpage').fullpage({
                 anchors: ['pageWeAre', 'pageTheStory', 'pageTravelling', 'pageGallery', 'pageJob'],
                 verticalCentered: true,
@@ -125,12 +125,12 @@
 <div class="share_button googleplus" onclick="shareGoog('http://vlasenko.cc/')"></div>
 <div class="share_button twitter" onclick="tweet('familyvlasenko')"></div>
 <div class="share_button vk" onclick="shareVk('http://vlasenko.cc/', 'http://vlasenko.cc/resources/img/share/weAreShare.png')"></div>
-<div class="language" onchange="setLanguage()">
-    <select id="selectedLanguage">
-        <option id="english" class="langEn" value="en">English</option>
-        <option id="russian" class="langRu" value="ru">Russian</option>
-    </select>
-</div>
+<%--<div class="language" onchange="setLanguage()">--%>
+    <%--<select id="selectedLanguage">--%>
+        <%--<option id="english" class="langEn" value="en">English</option>--%>
+        <%--<option id="russian" class="langRu" value="ru">Russian</option>--%>
+    <%--</select>--%>
+<%--</div>--%>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
