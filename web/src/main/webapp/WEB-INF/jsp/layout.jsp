@@ -46,7 +46,7 @@
                 menu: '#menu',
                 css3: true
             });
-//            $(window).resize();
+            $(window).resize();
         });
     </script>
 
