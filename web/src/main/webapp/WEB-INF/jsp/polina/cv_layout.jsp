@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-    <div class="share_button facebook" onclick="shareFb('http://polina.vlasenko.cc/','788581117901586', 'Polina Rodimova', 'Software Engineer')"></div>
+    <div class="share_button facebook" onclick="shareFb('http://polina.vlasenko.cc/','788581117901586', 'Polina Vlasenko', 'Software Engineer')"></div>
     <div class="share_button googleplus" onclick="shareGoog('http://polina.vlasenko.cc/')"></div>
     <div class="share_button twitter" onclick="tweet('softwareengineer')"></div>
     <div class="share_button linkedin" onclick="shareLinkedin('http://polina.vlasenko.cc/', 'Polina Vlasenko, Software Engineer')"></div>
