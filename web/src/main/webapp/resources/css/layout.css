@@ -1,7 +1,7 @@
 /* Style for our header texts
 	* --------------------------------------- */
 h1{
-    font-size: 5em;
+    font-size: 1em;
     font-family: arial,helvetica;
     color: #000000;
     margin:0;
@@ -11,6 +11,21 @@ h1{
 p{
     margin-top:0;
     margin-bottom:0
+    color: black;
+}
+
+.leftText {
+    margin-top:5px;
+    margin-bottom:0;
+    color: black;
+    text-align: right;
+}
+
+.rightText {
+    margin-top:5px;
+    margin-bottom:0;
+    color: black;
+    text-align: left;
 }
 
 .section {

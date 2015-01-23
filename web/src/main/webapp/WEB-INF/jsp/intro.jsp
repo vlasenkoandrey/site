@@ -4,9 +4,9 @@
     <div class="yui3-u-1-3">
         <div class="TextBoxBg1">
 
-            <div id="scrollbox3" class="contentBox1">
-                <div id="polinaText"></div>
-            </div>
+        <div id="scrollbox3" class="contentBox1">
+            <div id="polinaText"></div>
+        </div>
         </div>
     </div>
 
@@ -17,9 +17,9 @@
     <div class="yui3-u-1-3">
         <div class="TextBoxBg2">
 
-            <div id="scrollbox2" class="contentBox2">
-                <div id="andreyText"></div>
-            </div>
+        <div id="scrollbox2" class="contentBox2">
+            <div id="andreyText"></div>
+        </div>
         </div>
     </div>
     <script>

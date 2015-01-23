@@ -67,7 +67,7 @@
         </div>
     </div>
     <div class="section" id="sectionTheStory">
-        <div id="storyDiv">
+        <div id="storyDiv" style="margin-top: -15vh">
         </div>
     </div>
     <div class="section" id="sectionTravelling">
@@ -80,39 +80,39 @@
             </div>
         </div>
         <div class="slide" id="slideBalising">
-            <div id="galleryBalising">
+            <div id="galleryBalising" style="margin-top: -15vh">
             </div>
         </div>
         <div class="slide" id="slideAndorra">
-            <div id="galleryAndorra">
+            <div id="galleryAndorra" style="margin-top: -15vh">
             </div>
         </div>
         <div class="slide" id="slideMinsk">
-            <div id="galleryMinsk">
+            <div id="galleryMinsk" style="margin-top: -15vh">
             </div>
         </div>
         <div class="slide" id="slideIstambul">
-            <div id="galleryIstambul">
+            <div id="galleryIstambul" style="margin-top: -15vh">
             </div>
         </div>
         <div class="slide" id="slideVeyzona">
-            <div id="galleryVeyzona">
+            <div id="galleryVeyzona" style="margin-top: -15vh">
             </div>
         </div>
         <div class="slide" id="slideGreece">
-            <div id="galleryGreece">
+            <div id="galleryGreece" style="margin-top: -15vh">
             </div>
         </div>
         <div class="slide" id="slideSpain">
-            <div id="gallerySpain">
+            <div id="gallerySpain" style="margin-top: -15vh">
             </div>
         </div>
         <div class="slide" id="slidePhuket">
-            <div id="galleryPhuket">
+            <div id="galleryPhuket" style="margin-top: -15vh">
             </div>
         </div>
         <div class="slide" id="slideAstrahan">
-            <div id="galleryAstrahan">
+            <div id="galleryAstrahan"  style="margin-top: -15vh">
             </div>
         </div>
     </div>

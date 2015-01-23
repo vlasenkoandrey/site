@@ -4,15 +4,16 @@
 <script type="text/javascript" src="../resources/fotorama/fotorama.js"></script>
 <link rel="stylesheet" type="text/css" href="../resources/fotorama/fotorama.css"/>
 <link rel="stylesheet" type="text/css" href="../resources/css/text-gallery.css"/>
+<div>
 
 <div class="textBoxBgGal">
     <div id="textFd${id}" class="contentTextGal">
-        <p id="pText${id}"></p>
+        <div id="pText${id}"></div>
     </div>
 </div>
 
 <div class="gallery">
-    <div class="fotorama" data-width="80%" data-maxwidth=80%" data-maxheight="70%" data-ratio="4/3" data-nav="thumbs" data-allowfullscreen="true">
+    <div class="fotorama" data-width="100%" data-hight="50vh" data-nav="thumbs" data-ratio="4/3" data-allowfullscreen="true">
         <c:forEach items="${videos}" var="video">
             <a href="${video}">One</a>
         </c:forEach>
@@ -31,3 +32,4 @@
         theme:'rounded-dark'
     });
 </script>
+</div>

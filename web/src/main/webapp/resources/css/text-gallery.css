@@ -6,16 +6,17 @@
     filter: "alpha(opacity=60)";
     -ms-filter: "alpha(opacity=60)";
     width: 80%;
-    height: 120px;
-    top: 50px;
+    height: 18vh;
+    top: 0;
     left: 10%
 }
 
 .gallery {
     width: 480px;
-    margin-top: 70px;
+    /*margin-top: 70px;*/
     margin-left: auto;
     margin-right: auto;
+    height: 50vh;
 }
 
 .contentTextGal {
@@ -29,4 +30,10 @@
     color: #505050;
     line-height: 1.35em;
     overflow: hidden;
+}
+
+.galtext {
+    margin-top:0;
+    margin-bottom:0;
+    color: black;
 }
