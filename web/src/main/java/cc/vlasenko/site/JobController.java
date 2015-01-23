@@ -10,7 +10,7 @@ import static cc.vlasenko.site.ResourceResolver.URL_PREFIX_TEXT;
 public class JobController {
     @RequestMapping("/job.jsp")
     public String getJobPage(ModelMap modelMap) {
-        modelMap.addAttribute("text", URL_PREFIX_TEXT + "story.txt");
+        modelMap.addAttribute("text", URL_PREFIX_TEXT + "job/en/job.txt");
         return "job";
     }
 }

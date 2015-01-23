@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class QiwiWalletController {
     @RequestMapping("/andrey/qiwiwallet.jsp")
     public String getExperiencePage(ModelMap modelMap) {
-        modelMap.addAttribute("text", "../resources/text/story.txt");
+        modelMap.addAttribute("text", "../resources/text/andrey/qiwi.txt");
         modelMap.addAttribute("exp", "qw");
         modelMap.addAttribute("photo", "andreyQwPhoto");
         return "andrey/leftExperiencePage";

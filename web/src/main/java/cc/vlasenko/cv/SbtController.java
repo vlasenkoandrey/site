@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SbtController {
     @RequestMapping("/andrey/sbt.jsp")
     public String getExperiencePage(ModelMap modelMap) {
-        modelMap.addAttribute("text", "../resources/text/story.txt");
+        modelMap.addAttribute("text", "../resources/text/andrey/sbt.txt");
         modelMap.addAttribute("exp", "sbt");
         modelMap.addAttribute("photo", "andreySbtPhoto");
         return "andrey/leftExperiencePage";

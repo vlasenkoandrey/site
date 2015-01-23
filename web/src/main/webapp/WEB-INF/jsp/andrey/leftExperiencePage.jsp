@@ -5,7 +5,7 @@
     <div class="yui3-u-1-2">
         <div class="leftTextBoxBg">
             <div id="textFd${exp}" class="leftContentBox">
-                <p id="pText${exp}"></p>
+                <div id="pText${exp}"></div>
             </div>
         </div>
     </div>
