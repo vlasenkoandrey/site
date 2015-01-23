@@ -10,4 +10,9 @@ public class CommonController {
     public String getLayout() {
         return "layout";
     }
+
+	@RequestMapping("/cake.jsp")
+	public String getCake() {
+		return "cake";
+	}
 }
