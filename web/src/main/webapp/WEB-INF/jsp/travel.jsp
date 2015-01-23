@@ -45,7 +45,7 @@
         lng: 98.335210,
         title: 'Пхукет',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Каникулы на Пхукете 2011</p><p><a href="#pageGallery/8">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Отпуск на Пхукете 2011</p><p><a href="#pageGallery/8">больше...</a></p></div>'
         }
     });
     map.addMarker({
