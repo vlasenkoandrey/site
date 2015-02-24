@@ -79,6 +79,10 @@
             <div id="albumsSet"  style="margin-left: 40px; margin-right: 40px">
             </div>
         </div>
+        <div class="slide" id="slideItaly">
+            <div id="galleryItaly" style="margin-top: -15vh">
+            </div>
+        </div>
         <div class="slide" id="slideBalising">
             <div id="galleryBalising" style="margin-top: -15vh">
             </div>
