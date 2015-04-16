@@ -25,63 +25,13 @@
         </util:map>
     
     <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="story">
-        <property name="images">
-            <array>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="1.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="2.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="3.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="4.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="5.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="6.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="7.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="8.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="9.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="10.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="11.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="/static/img/story/"/>
-                    <constructor-arg index="1" value="12.jpg"/>
-                </bean>
-            </array>
-        </property>
         <property name="videos">
             <array>
                 <value>http://youtu.be/9OvEY0AoWfk</value>
             </array>
         </property>
+		<property name="path" value="/static/img/wedding/"/>
+		<property name="imageCount" value="149"/>
         <property name="text" value="story.txt"/>
     </bean>
 
