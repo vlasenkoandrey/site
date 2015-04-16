@@ -23,8 +23,8 @@
         </div>
     </div>
     <script>
-        $("#polinaText").load("../resources/text/polina/ru/polina_main.txt");
-        $("#andreyText").load("../resources/text/andrey/andrey_main.txt");
+        $("#polinaText").load("/static/text/polina/ru/polina_main.txt");
+        $("#andreyText").load("/static/text/andrey/andrey_main.txt");
         $(".contentBox1, .contentBox2").mCustomScrollbar({
             scrollButtons:{
                 enable:true

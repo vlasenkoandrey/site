@@ -35,7 +35,7 @@
 
 .weArePhoto {
     display: inline-block;
-    background: url("../img/weArePhoto.png") center center no-repeat;
+    background: url("/static/img/weArePhoto.png") center center no-repeat;
     background-size: auto 550px;
     margin-top: 50px;
     height: 550px;

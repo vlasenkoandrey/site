@@ -1,25 +1,25 @@
 #sectionSkills {
-    background: url("../img/andrey/mk6.png") repeat;
+    background: url("/static/img/andrey/mk6.png") repeat;
     background-color: #f6f6f6;
     background-size: 20%;
 }
 
 #slideSbt{
-    background: url("../img/andrey/sber_b.png") repeat;
+    background: url("/static/img/andrey/sber_b.png") repeat;
     background-size: 10%;
 }
 
 #slideHflabs{
-    background: url("../img/andrey/hflabs_b.png") repeat;
+    background: url("/static/img/andrey/hflabs_b.png") repeat;
     background-size: 20%;
 }
 
 #slideQiwiWallet{
-    background: url("../img/andrey/qiwi_b.png") repeat;
+    background: url("/static/img/andrey/qiwi_b.png") repeat;
     background-size: 10%;
 }
 
 #sectionEducation{
-     background: url("../img/andrey/msu_b.png") repeat;
+     background: url("/static/img/andrey/msu_b.png") repeat;
      background-size: 10%;
  }

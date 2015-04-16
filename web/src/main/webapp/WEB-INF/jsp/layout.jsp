@@ -128,7 +128,7 @@
 <div class="share_button facebook" onclick="shareFb('http://vlasenko.cc/', '1534328526837006', 'Vlasenko Family Site', 'Andrey & Polina')"></div>
 <div class="share_button googleplus" onclick="shareGoog('http://vlasenko.cc/')"></div>
 <div class="share_button twitter" onclick="tweet('familyvlasenko')"></div>
-<div class="share_button vk" onclick="shareVk('http://vlasenko.cc/', 'http://vlasenko.cc/resources/img/share/weAreShare.png')"></div>
+<div class="share_button vk" onclick="shareVk('http://vlasenko.cc/', 'http://vlasenko.cc/static/img/share/weAreShare.png')"></div>
 <%--<div class="language" onchange="setLanguage()">--%>
     <%--<select id="selectedLanguage">--%>
         <%--<option id="english" class="langEn" value="en">English</option>--%>

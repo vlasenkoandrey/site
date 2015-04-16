@@ -26,7 +26,7 @@
 
 .polinaWelcome {
     display: inline-block;
-    background: url("../img/polina/welcome.png") right center no-repeat;
+    background: url("/static/img/polina/welcome.png") right center no-repeat;
     background-size: auto 500px;
     margin-top: 50px;
     height: 500px;
@@ -38,7 +38,7 @@
 
 .andreyWelcome {
     display: inline-block;
-    background: url("../img/andrey/welcome.png") left center no-repeat;
+    background: url("/static/img/andrey/welcome.png") left center no-repeat;
     background-size: auto 500px;
     margin-top: 50px;
     height: 500px;

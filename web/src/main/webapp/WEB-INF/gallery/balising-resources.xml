@@ -28,91 +28,91 @@
         <property name="images">
             <array>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="1.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="2.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="3.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="4.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="5.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="6.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="7.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="8.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="9.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="10.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="11.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="12.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="13.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="14.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="15.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="16.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="17.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="18.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="19.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="20.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="21.jpg"/>
                 </bean>
                 <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/balising/"/>
+                    <constructor-arg index="0" value="/static/img/gallery/balising/"/>
                     <constructor-arg index="1" value="22.jpg"/>
                 </bean>
             </array>

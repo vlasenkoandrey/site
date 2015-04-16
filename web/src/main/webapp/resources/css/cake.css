@@ -1,4 +1,4 @@
 .cakeC{
- background: url("../img/cake.png") repeat;
+ background: url("/static/img/cake.png") repeat;
  background-size: 15%;
 }

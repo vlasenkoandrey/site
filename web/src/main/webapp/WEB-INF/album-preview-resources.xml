@@ -10,61 +10,61 @@
     <util:list id="album_preview_set_en">
         <bean id="balising_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="italy"/>
-            <constructor-arg index="1" value="../resources/img/gallery/italy/ic/21.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/italy/ic/21.jpg"/>
             <constructor-arg index="2" value="Italy"/>
             <constructor-arg index="3" value="#pageGallery/1"/>
         </bean>
         <bean id="balising_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="balising"/>
-            <constructor-arg index="1" value="../resources/img/gallery/balising/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/balising/ic/1.jpg"/>
             <constructor-arg index="2" value="Bali and Singapore"/>
             <constructor-arg index="3" value="#pageGallery/2"/>
         </bean>
         <bean id="andorra_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="andorra"/>
-            <constructor-arg index="1" value="../resources/img/gallery/andorra/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/andorra/ic/1.jpg"/>
             <constructor-arg index="2" value="Andorra"/>
             <constructor-arg index="3" value="#pageGallery/3"/>
         </bean>
         <bean id="minsk_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="minsk"/>
-            <constructor-arg index="1" value="../resources/img/gallery/minsk/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/minsk/ic/1.jpg"/>
             <constructor-arg index="2" value="Minsk"/>
             <constructor-arg index="3" value="#pageGallery/4"/>
         </bean>
         <bean id="istambul_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="istambul"/>
-            <constructor-arg index="1" value="../resources/img/gallery/istambul/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/istambul/ic/1.jpg"/>
             <constructor-arg index="2" value="Istambul"/>
             <constructor-arg index="3" value="#pageGallery/5"/>
         </bean>
         <bean id="veyzona_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="veyzona"/>
-            <constructor-arg index="1" value="../resources/img/gallery/veyzona/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/veyzona/ic/1.jpg"/>
             <constructor-arg index="2" value="Veyzona"/>
             <constructor-arg index="3" value="#pageGallery/6"/>
         </bean>
         <bean id="rodos_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="rodos"/>
-            <constructor-arg index="1" value="../resources/img/gallery/rodos/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/rodos/ic/1.jpg"/>
             <constructor-arg index="2" value="Greece Rodos"/>
             <constructor-arg index="3" value="#pageGallery/7"/>
         </bean>
         <bean id="spain_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="spain"/>
-            <constructor-arg index="1" value="../resources/img/gallery/spain/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/spain/ic/1.jpg"/>
             <constructor-arg index="2" value="Spain"/>
             <constructor-arg index="3" value="#pageGallery/8"/>
         </bean>
         <bean id="phuket_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="phuket"/>
-            <constructor-arg index="1" value="../resources/img/gallery/phuket/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/phuket/ic/1.jpg"/>
             <constructor-arg index="2" value="Phuket"/>
             <constructor-arg index="3" value="#pageGallery/9"/>
         </bean>
         <bean id="boats_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="boats"/>
-            <constructor-arg index="1" value="../resources/img/gallery/boats/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/boats/ic/1.jpg"/>
             <constructor-arg index="2" value="Astrahan and Ugra"/>
             <constructor-arg index="3" value="#pageGallery/10"/>
         </bean>
@@ -73,61 +73,61 @@
     <util:list id="album_preview_set_ru">
         <bean id="italy_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="italy"/>
-            <constructor-arg index="1" value="../resources/img/gallery/italy/ic/21.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/italy/ic/21.jpg"/>
             <constructor-arg index="2" value="Италия"/>
             <constructor-arg index="3" value="#pageGallery/1"/>
         </bean>
         <bean id="balising_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="balising"/>
-            <constructor-arg index="1" value="../resources/img/gallery/balising/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/balising/ic/1.jpg"/>
             <constructor-arg index="2" value="Бали и Сингапур"/>
             <constructor-arg index="3" value="#pageGallery/2"/>
         </bean>
         <bean id="andorra_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="andorra"/>
-            <constructor-arg index="1" value="../resources/img/gallery/andorra/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/andorra/ic/1.jpg"/>
             <constructor-arg index="2" value="Андорра"/>
             <constructor-arg index="3" value="#pageGallery/3"/>
         </bean>
         <bean id="minsk_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="minsk"/>
-            <constructor-arg index="1" value="../resources/img/gallery/minsk/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/minsk/ic/1.jpg"/>
             <constructor-arg index="2" value="Минск"/>
             <constructor-arg index="3" value="#pageGallery/4"/>
         </bean>
         <bean id="istambul_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="istambul"/>
-            <constructor-arg index="1" value="../resources/img/gallery/istambul/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/istambul/ic/1.jpg"/>
             <constructor-arg index="2" value="Стамбул"/>
             <constructor-arg index="3" value="#pageGallery/5"/>
         </bean>
         <bean id="veyzona_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="veyzona"/>
-            <constructor-arg index="1" value="../resources/img/gallery/veyzona/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/veyzona/ic/1.jpg"/>
             <constructor-arg index="2" value="Вейзона"/>
             <constructor-arg index="3" value="#pageGallery/6"/>
         </bean>
         <bean id="rodos_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="rodos"/>
-            <constructor-arg index="1" value="../resources/img/gallery/rodos/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/rodos/ic/1.jpg"/>
             <constructor-arg index="2" value="Греция Родос"/>
             <constructor-arg index="3" value="#pageGallery/7"/>
         </bean>
         <bean id="spain_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="spain"/>
-            <constructor-arg index="1" value="../resources/img/gallery/spain/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/spain/ic/1.jpg"/>
             <constructor-arg index="2" value="Испания"/>
             <constructor-arg index="3" value="#pageGallery/8"/>
         </bean>
         <bean id="phuket_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="phuket"/>
-            <constructor-arg index="1" value="../resources/img/gallery/phuket/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/phuket/ic/1.jpg"/>
             <constructor-arg index="2" value="Пхукет"/>
             <constructor-arg index="3" value="#pageGallery/9"/>
         </bean>
         <bean id="boats_preview" class="cc.vlasenko.site.model.AlbumPreviewBean">
             <constructor-arg index="0" value="boats"/>
-            <constructor-arg index="1" value="../resources/img/gallery/boats/ic/1.jpg"/>
+            <constructor-arg index="1" value="/static/img/gallery/boats/ic/1.jpg"/>
             <constructor-arg index="2" value="Астрахань и Угра"/>
             <constructor-arg index="3" value="#pageGallery/10"/>
         </bean>
