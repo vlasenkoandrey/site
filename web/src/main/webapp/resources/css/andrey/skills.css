@@ -1,6 +1,6 @@
 .subzero {
     display: inline-block;
-    background: url("../../img/subZeroPhoto.png") 10% center no-repeat;
+    background: url("/static/img/subZeroPhoto.png") 10% center no-repeat;
     background-size: auto 400px;
     height: 400px;
     width: 100%;

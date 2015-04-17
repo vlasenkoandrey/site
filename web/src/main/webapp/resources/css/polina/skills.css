@@ -1,6 +1,6 @@
 .ballPhoto {
     display: inline-block;
-    background: url("../../img/polinaBallPhoto.png") center bottom no-repeat;
+    background: url("/static/img/polinaBallPhoto.png") center bottom no-repeat;
     background-size: auto 400px;
     height: 300px;
     width: 100%;
