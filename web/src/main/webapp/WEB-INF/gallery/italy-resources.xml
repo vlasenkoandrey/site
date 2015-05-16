@@ -25,6 +25,11 @@
     </util:map>
 
     <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="italy">
+        <property name="videos">
+            <array>
+                <value>http://www.youtube.com/watch?v=AQL8UN0pmzE</value>
+            </array>
+        </property>
 		<property name="path" value="/static/img/gallery/italy/"/>
 		<property name="imageCount" value="63"/>
         <property name="text" value="italy.txt"/>
