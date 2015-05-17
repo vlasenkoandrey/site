@@ -28,6 +28,7 @@
         <property name="videos">
             <array>
                 <value>http://youtu.be/9OvEY0AoWfk</value>
+                <value>http://youtu.be/IJ7IqBFwqtk</value>
             </array>
         </property>
 		<property name="path" value="/static/img/wedding/"/>
