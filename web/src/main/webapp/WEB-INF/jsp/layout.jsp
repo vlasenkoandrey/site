@@ -9,6 +9,7 @@
     <meta name="keywords"  content="vlasenko" />
     <meta name="Resource-type" content="Document" />
     <meta property="og:image" content="http://vlasenko.cc/resources/img/share/weAreShare.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/v.gif" />
 
     <link rel="stylesheet" type="text/css" href="../resources/fullPage/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="../resources/css/layout.css" />
