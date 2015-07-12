@@ -28,7 +28,7 @@
 
 <div id ="albumsPreviewSet" class="yui3-g-r">
     <c:forEach items="${albumPreviewSet}" var="albumPreview">
-        <div class="yui3-u-1-5">
+        <div class="yui3-u-1-6">
             <div class="album_preview">
                 <div class="center-cropped" id="album_preview_${albumPreview.name}">
                     <a href="${albumPreview.href}">
