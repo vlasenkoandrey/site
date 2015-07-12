@@ -144,4 +144,21 @@
             content: '<div class=tooltipMarker><p>Канацеи</p><p><a href="#pageGallery/1">больше...</a></p></div>'
         }
     });
+    map.addMarker({
+        lat: 27.909563,
+        lng: 34.324322,
+        title: 'Шарм Эль Шейх',
+        infoWindow: {
+            content: '<div class=tooltipMarker><p>Канацеи</p><p><a href="#pageGallery/1">больше...</a></p></div>'
+        }
+    });
+
+    map.addMarker({
+        lat: 28.140847,
+        lng: -17.004749,
+        title: 'Los Gigantes',
+        infoWindow: {
+            content: '<div class=tooltipMarker><p>Канацеи</p><p><a href="#pageGallery/1">больше...</a></p></div>'
+        }
+    });
 </script>
