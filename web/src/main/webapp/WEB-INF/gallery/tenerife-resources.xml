@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:map id="tenerifeEntry">
+        <entry key="ru">
+            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                <constructor-arg index="0" ref="tenerife"/>
+                <constructor-arg index="1" value="ru/"/>
+                <constructor-arg index="2" value="gallery/tenerife/"/>
+            </bean>
+        </entry>
+        <entry key="en">
+            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                <constructor-arg index="0" ref="tenerife"/>
+                <constructor-arg index="1" value="en/"/>
+                <constructor-arg index="2" value="gallery/tenerife/"/>
+            </bean>
+        </entry>
+    </util:map>
+
+    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="tenerife">
+        <property name="videos">
+            <array>
+                <value>http://youtu.be/q6RisufWeeM</value>
+            </array>
+        </property>
+        <property name="path" value="/static/img/gallery/tenerife/"/>
+        <property name="imageCount" value="41"/>
+        <property name="text" value="tenerife.txt"/>
+    </bean>
+
+</beans>

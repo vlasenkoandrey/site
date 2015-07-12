@@ -114,6 +114,14 @@ $(document).ready(function() {
         }
     });
 
+    $('#slideTenerife').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView) {
+            $('#galleryTenerife').load("tgtenerife.jsp", function() {
+                $(window).resize();
+            });
+        }
+    });
+
     $('#sectionJob').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
         if (isInView) {
             $('#jobDiv').load("job.jsp", function() {

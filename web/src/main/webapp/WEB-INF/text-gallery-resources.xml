@@ -17,6 +17,7 @@
     <import resource="gallery/spain-resources.xml"/>
     <import resource="gallery/veyzona-resources.xml"/>
     <import resource="gallery/italy-resources.xml"/>
+    <import resource="gallery/tenerife-resources.xml"/>
     <import resource="gallery/story/story-resources.xml"/>
 
 
@@ -42,6 +43,7 @@
                         </entry>
                     </util:map>
                 </entry>
+                <entry key="TENERIFE" value-ref="tenerifeEntry"/>
                 <entry key="ITALY" value-ref="italyEntry"/>
                 <entry key="ASTRAHAN" value-ref="boatsEntry"/>
                 <entry key="ANDORRA" value-ref="andorraEntry"/>
