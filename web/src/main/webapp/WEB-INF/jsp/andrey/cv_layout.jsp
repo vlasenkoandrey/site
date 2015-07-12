@@ -82,7 +82,7 @@
     <div class="share_button googleplus" onclick="shareGoog('http://andrey.vlasenko.cc/')"></div>
     <div class="share_button twitter" onclick="tweet('softwareengineer')"></div>
     <div class="share_button linkedin" onclick="shareLinkedin('http://andrey.vlasenko.cc/', 'Andrey Vlasenko, Software Engineer')"></div>
-    <div class="share_button vk" onclick="shareVk('http://andrey.vlasenko.cc/', 'http://andrey.vlasenko.cc/resources/img/share/andreyShare.png')"></div>
+    <div class="share_button vk" onclick="shareVk('http://andrey.vlasenko.cc/', 'http://andrey.vlasenko.cc/static/img/share/andreyShare.png')"></div>
 </div>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

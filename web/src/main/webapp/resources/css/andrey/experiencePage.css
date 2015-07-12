@@ -38,7 +38,7 @@
     height: 550px;
     margin-top: 50px;
     margin-left: 20%;
-    background: url("../../img/andrey/msu.png") center center no-repeat;
+    background: url("/static/img/andrey/msu.png") center center no-repeat;
     background-size: auto 550px;
 }
 
@@ -48,7 +48,7 @@
     height: 550px;
     margin-top: 50px;
     margin-left: 10%;
-    background: url("../../img/andrey/sbt.png") center center no-repeat;
+    background: url("/static/img/andrey/sbt.png") center center no-repeat;
     background-size: auto 550px;
 }
 
@@ -58,7 +58,7 @@
     height: 550px;
     margin-top: 50px;
     margin-left: 10%;
-    background: url("../../img/polina/msu.png") center center no-repeat;
+    background: url("/static/img/polina/msu.png") center center no-repeat;
     background-size: auto 550px;
 }
 
@@ -68,7 +68,7 @@
     height: 550px;
     margin-top: 50px;
     margin-left: 20%;
-    background: url("../../img/polina/qiwi_lead.png") center center no-repeat;
+    background: url("/static/img/polina/qiwi_lead.png") center center no-repeat;
     background-size: auto 550px;
 }
 
@@ -78,7 +78,7 @@
     height: 550px;
     margin-top: 50px;
     margin-left: 10%;
-    background: url("../../img/polina/qiwi_dev.png") center center no-repeat;
+    background: url("/static/img/polina/qiwi_dev.png") center center no-repeat;
     background-size: auto 550px;
 }
 
@@ -88,7 +88,7 @@
     height: 550px;
     margin-top: 50px;
     margin-left: 20%;
-    background: url("../../img/andrey/hflabs.png") center center no-repeat;
+    background: url("/static/img/andrey/hflabs.png") center center no-repeat;
     background-size: auto 550px;
 }
 
@@ -98,6 +98,6 @@
     height: 550px;
     margin-top: 50px;
     margin-left: 10%;
-    background: url("../../img/andrey/qiwi.png") center center no-repeat;
+    background: url("/static/img/andrey/qiwi.png") center center no-repeat;
     background-size: auto 550px;
 }

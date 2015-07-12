@@ -9,6 +9,7 @@
     <meta name="keywords"  content="vlasenko" />
     <meta name="Resource-type" content="Document" />
     <meta property="og:image" content="http://vlasenko.cc/resources/img/share/weAreShare.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/v.gif" />
 
     <link rel="stylesheet" type="text/css" href="../resources/fullPage/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="../resources/css/layout.css" />
@@ -128,7 +129,7 @@
 <div class="share_button facebook" onclick="shareFb('http://vlasenko.cc/', '1534328526837006', 'Vlasenko Family Site', 'Andrey & Polina')"></div>
 <div class="share_button googleplus" onclick="shareGoog('http://vlasenko.cc/')"></div>
 <div class="share_button twitter" onclick="tweet('familyvlasenko')"></div>
-<div class="share_button vk" onclick="shareVk('http://vlasenko.cc/', 'http://vlasenko.cc/resources/img/share/weAreShare.png')"></div>
+<div class="share_button vk" onclick="shareVk('http://vlasenko.cc/', 'http://vlasenko.cc/static/img/share/weAreShare.png')"></div>
 <%--<div class="language" onchange="setLanguage()">--%>
     <%--<select id="selectedLanguage">--%>
         <%--<option id="english" class="langEn" value="en">English</option>--%>

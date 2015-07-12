@@ -77,7 +77,7 @@
     <div class="share_button googleplus" onclick="shareGoog('http://polina.vlasenko.cc/')"></div>
     <div class="share_button twitter" onclick="tweet('softwareengineer')"></div>
     <div class="share_button linkedin" onclick="shareLinkedin('http://polina.vlasenko.cc/', 'Polina Vlasenko, Software Engineer')"></div>
-    <div class="share_button vk" onclick="shareVk('http://polina.vlasenko.cc/', 'http://polina.vlasenko.cc/resources/img/share/polinaShare.png')"></div>
+    <div class="share_button vk" onclick="shareVk('http://polina.vlasenko.cc/', 'http://polina.vlasenko.cc/static/img/share/polinaShare.png')"></div>
 
 </div>
 <script>

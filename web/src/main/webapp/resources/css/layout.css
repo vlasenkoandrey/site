@@ -41,7 +41,7 @@ h2{
 }
 
 body {
-    background: url("../img/main_background.jpg") repeat;
+    background: url("/static/img/main_background.jpg") repeat;
 }
 
 .fullPage-slidesNav.bottom{

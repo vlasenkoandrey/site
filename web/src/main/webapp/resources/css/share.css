@@ -73,25 +73,25 @@
 
 .facebook {
     right: 90px;
-    background : url("../img/share/facebook32.png") center center no-repeat;
+    background : url("/static/img/share/facebook32.png") center center no-repeat;
 }
 
 .twitter {
     right: 50px;
-    background : url("../img/share/twitter32.png") center center no-repeat;
+    background : url("/static/img/share/twitter32.png") center center no-repeat;
 }
 
 .googleplus {
     right: 10px;
-    background : url("../img/share/googleplus32.png") center center no-repeat;
+    background : url("/static/img/share/googleplus32.png") center center no-repeat;
 }
 
 .linkedin {
     right: 170px;
-    background: url("../img/share/linkedin32.png") center center no-repeat;
+    background: url("/static/img/share/linkedin32.png") center center no-repeat;
 }
 
 .vk {
     right: 130px;
-    background: url("../img/share/vk32.png") center center no-repeat;
+    background: url("/static/img/share/vk32.png") center center no-repeat;
 }

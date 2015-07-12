@@ -26,54 +26,8 @@
     </util:map>
 
     <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="rodos">
-        <property name="images">
-            <array>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="1.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="2.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="3.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="4.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="5.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="6.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="7.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="8.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="9.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="10.jpg"/>
-                </bean>
-                <bean class="cc.vlasenko.site.model.ImageBean">
-                    <constructor-arg index="0" value="../resources/img/gallery/rodos/"/>
-                    <constructor-arg index="1" value="11.jpg"/>
-                </bean>
-            </array>
-        </property>
+		<property name="path" value="/static/img/gallery/rodos/"/>
+		<property name="imageCount" value="11"/>
         <property name="text" value="rodos.txt"/>
     </bean>
 

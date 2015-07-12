@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AndreyEducationController {
     @RequestMapping("/andrey/msu.jsp")
     public String getEducation(ModelMap modelMap) {
-        modelMap.addAttribute("text", "../resources/text/andrey/msu.txt");
+        modelMap.addAttribute("text", "/static/text/andrey/msu.txt");
         modelMap.addAttribute("exp", "msu");
         modelMap.addAttribute("photo", "andreyMsuPhoto");
         return "andrey/rightExperiencePage";
