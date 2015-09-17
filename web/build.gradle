@@ -1,13 +1,15 @@
 apply plugin: 'java'
 apply plugin: 'war'
-
+group = 'vlasenko.cc'
 version = '1.0'
 
 repositories {
     mavenCentral()
 }
 
+
 dependencies {
+    compile project(':core')
     compile 'org.springframework:spring-core:4.1.2.RELEASE'
     compile 'org.springframework:spring-context:4.1.2.RELEASE'
     compile 'org.springframework:spring-webmvc:4.1.2.RELEASE'

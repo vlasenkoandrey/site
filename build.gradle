@@ -1,5 +1,5 @@
 apply plugin: 'java'
-
+group = 'vlasenko.cc'
 version = '1.0'
 
 repositories {

@@ -1,5 +1,5 @@
 apply plugin: 'java'
-
+group = 'vlasenko.cc'
 version = '1.0'
 
 repositories {
@@ -7,7 +7,21 @@ repositories {
 }
 
 dependencies {
+    compile 'com.google.api-client:google-api-client:1.20.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.20.0'
+    compile 'com.google.apis:google-api-services-gmail:v1-rev29-1.20.0'
+    compile 'javax.mail:mail:1.4'
+    compile 'org.springframework:spring-core:4.1.2.RELEASE'
+    compile 'org.springframework:spring-context:4.1.2.RELEASE'
+    runtime 'org.slf4j:slf4j-log4j12:1.7.5'
+    runtime 'org.slf4j:slf4j-simple:1.7.5'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'javax.inject:javax.inject:1'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.google.guava:guava:11.0.2'
     testCompile group: 'junit', name: 'junit', version: '4.11'
-    testCompile 'commons-io:commons-io:2.4'
+    testCompile 'org.springframework:spring-test:4.1.2.RELEASE'
 
 }
