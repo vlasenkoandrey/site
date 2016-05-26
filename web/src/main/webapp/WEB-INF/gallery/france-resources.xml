@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:map id="franceEntry">
+        <entry key="ru">
+            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                <constructor-arg index="0" ref="france"/>
+                <constructor-arg index="1" value="ru/"/>
+                <constructor-arg index="2" value="gallery/france/"/>
+            </bean>
+        </entry>
+        <entry key="en">
+            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                <constructor-arg index="0" ref="france"/>
+                <constructor-arg index="1" value="en/"/>
+                <constructor-arg index="2" value="gallery/france/"/>
+            </bean>
+        </entry>
+    </util:map>
+
+    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="france">
+        <property name="videos">
+            <array>
+                <value>http://www.youtube.com/watch?v=mrzRqDeZ4r8</value>
+            </array>
+        </property>
+        <property name="path" value="/static/img/gallery/france/"/>
+        <property name="imageCount" value="1"/>
+        <property name="text" value="france.txt"/>
+    </bean>
+
+</beans>

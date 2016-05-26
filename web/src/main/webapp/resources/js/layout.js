@@ -122,6 +122,14 @@ $(document).ready(function() {
         }
     });
 
+    $('#slideFrance').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView) {
+            $('#galleryFrance').load("tgfrance.jsp", function() {
+                $(window).resize();
+            });
+        }
+    });
+
     $('#sectionJob').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
         if (isInView) {
             $('#jobDiv').load("job.jsp", function() {

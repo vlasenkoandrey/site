@@ -37,7 +37,7 @@
         lng: 47.993586,
         title: 'Астрахань',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Астрахань</p><p><a href="#pageGallery/11">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Астрахань</p><p><a href="#pageGallery/12">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -45,7 +45,7 @@
         lng: 98.335210,
         title: 'Пхукет',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Пхукет</p><p><a href="#pageGallery/10">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Пхукет</p><p><a href="#pageGallery/11">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -53,7 +53,7 @@
         lng: -4.420428,
         title: 'Малага',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Малага</p><p><a href="#pageGallery/9">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Малага</p><p><a href="#pageGallery/10">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -61,7 +61,7 @@
         lng: 35.963792,
         title: 'Угра',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Угра</p><p><a href="#pageGallery/10">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Угра</p><p><a href="#pageGallery/12">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -69,7 +69,7 @@
         lng: 7.367698,
         title: 'Вейзона',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Вейзона</p><p><a href="#pageGallery/7">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Вейзона</p><p><a href="#pageGallery/8">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -77,7 +77,7 @@
         lng: 27.814449,
         title: 'Родос',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Родос</p><p><a href="#pageGallery/8">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Родос</p><p><a href="#pageGallery/9">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -93,7 +93,7 @@
         lng:  1.650389,
         title: 'Андорра',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Эль Тартер</p><p><a href="#pageGallery/4">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Эль Тартер</p><p><a href="#pageGallery/5">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -101,7 +101,7 @@
         lng:  2.159754,
         title: 'Барселона',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Барселона</p><p><a href="#pageGallery/4">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Барселона</p><p><a href="#pageGallery/5">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -109,7 +109,7 @@
         lng:  27.540729,
         title: 'Минск',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Минск</p><p><a href="#pageGallery/5">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Минск</p><p><a href="#pageGallery/6">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -117,7 +117,7 @@
         lng:  29.036899,
         title: 'Стамбул',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Стамбул</p><p><a href="#pageGallery/6">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Стамбул</p><p><a href="#pageGallery/7">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -125,7 +125,7 @@
         lng:  115.104536,
         title: 'Бали',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Бали</p><p><a href="#pageGallery/3">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Бали</p><p><a href="#pageGallery/4">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -133,7 +133,7 @@
         lng:  103.860475,
         title: 'Сингапур',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Сингапур</p><p><a href="#pageGallery/3">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Сингапур</p><p><a href="#pageGallery/4">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -141,7 +141,7 @@
         lng:  11.770347,
         title: 'Канацеи',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Канацеи</p><p><a href="#pageGallery/2">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Канацеи</p><p><a href="#pageGallery/3">больше...</a></p></div>'
         }
     });
     map.addMarker({
@@ -158,7 +158,16 @@
         lng: -17.004749,
         title: 'Los Gigantes',
         infoWindow: {
-            content: '<div class=tooltipMarker><p>Tenerife</p><p><a href="#pageGallery/1">больше...</a></p></div>'
+            content: '<div class=tooltipMarker><p>Tenerife</p><p><a href="#pageGallery/2">больше...</a></p></div>'
+        }
+    });
+
+    map.addMarker({
+        lat: 45.572019,
+        lng: 6.829634,
+        title: 'Les Arcs',
+        infoWindow: {
+            content: '<div class=tooltipMarker><p>Les Arcs</p><p><a href="#pageGallery/1">больше...</a></p></div>'
         }
     });
 </script>
