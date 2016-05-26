@@ -31,7 +31,7 @@
             </array>
         </property>
         <property name="path" value="/static/img/gallery/france/"/>
-        <property name="imageCount" value="1"/>
+        <property name="imageCount" value="15"/>
         <property name="text" value="france.txt"/>
     </bean>
 
