@@ -7,32 +7,32 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <util:map id="franceEntry">
+    <util:map id="philippinsEntry">
         <entry key="ru">
             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
-                <constructor-arg index="0" ref="france"/>
+                <constructor-arg index="0" ref="philippins"/>
                 <constructor-arg index="1" value="ru/"/>
-                <constructor-arg index="2" value="gallery/france/"/>
+                <constructor-arg index="2" value="gallery/philippins/"/>
             </bean>
         </entry>
         <entry key="en">
             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
-                <constructor-arg index="0" ref="france"/>
+                <constructor-arg index="0" ref="philippins"/>
                 <constructor-arg index="1" value="en/"/>
-                <constructor-arg index="2" value="gallery/france/"/>
+                <constructor-arg index="2" value="gallery/philippins/"/>
             </bean>
         </entry>
     </util:map>
 
-    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="france">
-        <property name="videos">
-            <array>
-                <value>https://youtu.be/y6e11vCuavQ</value>
-            </array>
-        </property>
-        <property name="path" value="/static/img/gallery/france/"/>
+    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="philippins">
+        <!--<property name="videos">-->
+            <!--<array>-->
+                <!--<value>todo</value>-->
+            <!--</array>-->
+        <!--</property>-->
+        <property name="path" value="/static/img/gallery/philippins/"/>
         <property name="imageCount" value="1"/>
-        <property name="text" value="france.txt"/>
+        <property name="text" value="philippins.txt"/>
     </bean>
 
 </beans>

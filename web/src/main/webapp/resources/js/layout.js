@@ -130,6 +130,14 @@ $(document).ready(function() {
         }
     });
 
+    $('#slidePhilippins').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView) {
+            $('#galleryPhilippins').load("tgphilippins.jsp", function() {
+                $(window).resize();
+            });
+        }
+    });
+
     $('#sectionJob').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
         if (isInView) {
             $('#jobDiv').load("job.jsp", function() {
