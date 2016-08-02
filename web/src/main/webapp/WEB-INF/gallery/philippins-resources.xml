@@ -25,11 +25,11 @@
     </util:map>
 
     <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="philippins">
-        <!--<property name="videos">-->
-            <!--<array>-->
-                <!--<value>todo</value>-->
-            <!--</array>-->
-        <!--</property>-->
+        <property name="videos">
+            <array>
+                <value>https://youtu.be/9C3_wwOM4ig</value>
+            </array>
+        </property>
         <property name="path" value="/static/img/gallery/philippins/"/>
         <property name="imageCount" value="19"/>
         <property name="text" value="philippins.txt"/>

@@ -1,5 +1,20 @@
 package cc.vlasenko.mail;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.security.GeneralSecurityException;
+import java.util.Properties;
+
+import javax.annotation.PostConstruct;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -16,16 +31,6 @@ import com.google.api.services.gmail.GmailScopes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.PostConstruct;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-import java.io.*;
-import java.security.GeneralSecurityException;
-import java.util.Properties;
-
 public class GmailClient {
     private static final Logger logger = LoggerFactory.getLogger((Class) GmailClient.class);
     private static final String APPLICATION_NAME = "vlasenko.cc";
@@ -38,11 +43,17 @@ public class GmailClient {
 
     @PostConstruct
     public void init() throws IOException, GeneralSecurityException {
-        httpTransport = GoogleNetHttpTransport.newTrustedTransport();
-        jsonFactory = JacksonFactory.getDefaultInstance();
-        dataStoreFactory = new FileDataStoreFactory(DATA_STORE_DIR);
-        Credential credential = authorize();
-        gmail = new Gmail.Builder(httpTransport, jsonFactory, credential).setApplicationName("vlasenko.cc").build();
+        try {
+            httpTransport = GoogleNetHttpTransport.newTrustedTransport();
+            jsonFactory = JacksonFactory.getDefaultInstance();
+            dataStoreFactory = new FileDataStoreFactory(DATA_STORE_DIR);
+            Credential credential = authorize();
+            gmail = new Gmail.Builder(httpTransport, jsonFactory, credential).setApplicationName("vlasenko.cc").build();
+
+        }catch (Exception e){
+            //пока все равно не используется
+            logger.error("can't init GmailClient");
+        }
     }
 
     private Credential authorize() throws IOException {
