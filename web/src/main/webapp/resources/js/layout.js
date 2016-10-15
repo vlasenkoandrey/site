@@ -138,6 +138,14 @@ $(document).ready(function() {
         }
     });
 
+    $('#slideAmsterdam').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView) {
+            $('#galleryAmsterdam').load("tgamsterdam.jsp", function() {
+                $(window).resize();
+            });
+        }
+    });
+
     $('#sectionJob').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
         if (isInView) {
             $('#jobDiv').load("job.jsp", function() {

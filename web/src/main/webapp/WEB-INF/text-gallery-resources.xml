@@ -20,6 +20,7 @@
     <import resource="gallery/tenerife-resources.xml"/>
     <import resource="gallery/france-resources.xml"/>
     <import resource="gallery/philippins-resources.xml"/>
+    <import resource="gallery/amsterdam-resources.xml"/>
     <import resource="gallery/story/story-resources.xml"/>
 
 
@@ -45,6 +46,7 @@
                         </entry>
                     </util:map>
                 </entry>
+                <entry key="AMSTERDAM" value-ref="amsterdamEntry"/>
                 <entry key="PHILIPPINS" value-ref="philippinsEntry"/>
                 <entry key="FRANCE" value-ref="franceEntry"/>
                 <entry key="TENERIFE" value-ref="tenerifeEntry"/>
