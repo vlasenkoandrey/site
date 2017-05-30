@@ -10,6 +10,7 @@ RUN add-apt-repository ppa:webupd8team/java -y
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
 RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
 RUN apt-get update && apt-get install -y \
+  vim \
   locate \
   unzip \
   wget \
@@ -27,7 +28,7 @@ RUN echo "STEP 01 finished - git, java, gradle, nginx installed"
 RUN echo "STEP 02 start - clone vlasenko site"
 RUN mkdir /opt/projects
 RUN git clone https://polinarodimova:Polina303256353@github.com/vlasenkoandrey/site.git /opt/projects/vlasenkosite
-
+RUN cd /opt/projects/vlasenkosite && git checkout origin/xorda
 RUN cp /opt/projects/vlasenkosite/docker/nginx_default /etc/nginx/sites-enabled/default
 
 #todo set up nginx
