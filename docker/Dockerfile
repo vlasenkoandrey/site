@@ -31,9 +31,7 @@ RUN git clone https://polinarodimova:Polina303256353@github.com/vlasenkoandrey/s
 RUN cd /opt/projects/vlasenkosite && git checkout origin/xorda && cd web  &&  gradle clean & gradle build
 RUN cp /opt/projects/vlasenkosite/docker/nginx_default /etc/nginx/sites-enabled/default
 
-EXPOSE 80 80
-EXPOSE 8080 8080
-EXPOSE 4000 4000
+EXPOSE 80 8080 4000
 
 ADD entrypoint.sh /
 

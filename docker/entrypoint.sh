@@ -1,10 +1,6 @@
 #!/bin/bash
 
-cd /opt/projects/vlasenkosite
-git checkout origin/xorda
-cd web
-gradle clean & gradle build
-cd build/distributions
+cd /opt/projects/vlasenkosite/web/build/distributions
 
 java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=4000,suspend=n  -cp "./*" cc.vlasenko.site.MainApplication &
 

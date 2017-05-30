@@ -22,7 +22,7 @@ case "$CMD" in
         fi
         #IMAGE=$(docker images | grep 'vlasenkosite' | awk '{print $1}')
         #docker rmi $IMAGE
-        docker build .  -t $IMAGE_NAME
+        docker build .  --no-cache -t $IMAGE_NAME
         echo "Done"
     ;;
 
