@@ -1,0 +1,39 @@
+#
+FROM ubuntu:14.04
+
+RUN echo "STEP 01 start - install git, java, gradle, nginx"
+RUN apt-get update && apt-get install -y \ 
+   python-software-properties \
+   software-properties-common
+RUN add-apt-repository ppa:cwchien/gradle
+RUN add-apt-repository ppa:webupd8team/java -y
+RUN echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
+RUN apt-get update && apt-get install -y \
+  locate \
+  unzip \
+  wget \
+  curl \
+  git \
+  oracle-java8-installer \
+  gradle \
+  nginx 
+RUN echo "GIT VERSION:" | git --version
+RUN echo "JAVA VERSION:" | java -version
+RUN echo "GRADLE VERSION:" | gradle -v
+RUN echo "STEP 01 finished - git, java, gradle, nginx installed"
+
+
+RUN echo "STEP 02 start - clone vlasenko site"
+RUN mkdir /opt/projects
+RUN git clone https://polinarodimova:Polina303256353@github.com/vlasenkoandrey/site.git /opt/projects/vlasenkosite
+RUN git checkout origin/xorda
+RUN gradle build -p /opt/projects/vlasenkosite
+RUN ls /opt/projects/vlasenkosite/web/build/libs
+
+#todo download static 
+#todo set up nginx
+#todo run
+
+RUN echo "STEP 03 finished - projects vlasenko built"
+
