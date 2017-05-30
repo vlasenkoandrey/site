@@ -5,7 +5,7 @@ echo "Vlasenko site Docker helper script"
 
 IMAGE_NAME=vlasenkosite
 CONTAINER_NAME=vlasenkosite
-PORTS="-p 80:80 "
+PORTS="-p 80:80  -p 8080:8080"
 #можно дебаг порты добавить
 
 
@@ -28,8 +28,7 @@ case "$CMD" in
 
 
     run-image)
-        printPorts
-        docker run  -e 'ACCEPT_EULA=Y' --name $CONTAINER_NAME $PORTS -d $IMAGE_NAME
+        docker run  --name $CONTAINER_NAME $PORTS -d $IMAGE_NAME
     ;;
 
     bash)

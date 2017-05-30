@@ -1,5 +1,8 @@
 #move this to /etc/nginx/sites-enabled/default
 
+upstream app-a {
+    server 127.0.0.1:3000;
+}
 #127.0.0.1
 server {
 	listen 127.0.0.1:80; #наш сервер
