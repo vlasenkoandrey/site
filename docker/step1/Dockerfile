@@ -27,13 +27,10 @@ RUN echo "STEP 01 finished - git, java, gradle, nginx installed"
 RUN echo "STEP 02 start - clone vlasenko site"
 RUN mkdir /opt/projects
 RUN git clone https://polinarodimova:Polina303256353@github.com/vlasenkoandrey/site.git /opt/projects/vlasenkosite
-RUN git checkout origin/xorda
-RUN gradle build -p /opt/projects/vlasenkosite
-RUN ls /opt/projects/vlasenkosite/web/build/libs
 
-#todo download static 
+RUN cp /opt/projects/vlasenkosite/docker/nginx_default /etc/nginx/sites-enabled/default
+
 #todo set up nginx
-#todo run
 
-RUN echo "STEP 03 finished - projects vlasenko built"
+RUN echo "STEP 03 finished - projects vlasenko cloned"
 
