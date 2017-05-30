@@ -93,11 +93,11 @@ public class GmailClient {
 //        return message;
 //    }
 //
-//    public void setSecretFilePath(String secretFilePath) {
-//        this.secretFilePath = secretFilePath;
-//    }
-//
-//    public String getSecretFilePath() {
-//        return secretFilePath;
-//    }
+    public void setSecretFilePath(String secretFilePath) {
+        this.secretFilePath = secretFilePath;
+    }
+
+    public String getSecretFilePath() {
+        return secretFilePath;
+    }
 }
