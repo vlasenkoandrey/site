@@ -2,13 +2,14 @@
 FROM vlasenkosite1:latest
 
 
-RUN cd /opt/projects/vlasenkosite && \
-    git fetch /opt/projects/vlasenkosite && \
-    git checkout origin/xorda
-RUN gradle build -p /opt/projects/vlasenkosite/web
+RUN echo "STEP 02 start - clone vlasenkosite"
+RUN cd /opt/projects/vlasenkosite && git checkout origin/xorda && cd web  &&  gradle clean & gradle build
+RUN echo "STEP 03 finished - projects vlasenkosite build"
 
-#todo download static
-#todo run
+EXPOSE 80 8080 4000
 
-RUN echo "STEP 03 finished - projects vlasenko started"
+ADD entrypoint.sh /
+
+CMD ["entrypoint"]
+
 
