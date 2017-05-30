@@ -27,7 +27,7 @@ public class GmailClient {
 //    private volatile JsonFactory jsonFactory;
 //    private volatile HttpTransport httpTransport;
 //    private volatile Gmail gmail;
-//    private String secretFilePath;
+    private String secretFilePath;
 
    // @PostConstruct
 //    public void init() throws IOException, GeneralSecurityException {
