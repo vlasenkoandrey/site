@@ -1,9 +1,8 @@
 #move this to /etc/nginx/sites-enabled/default
 
 
-#127.0.0.1
 server {
-	listen 127.0.0.1:80; #наш сервер
+	listen 0.0.0.0:80; #наш сервер
 	server_name vlasenko.cc www.vlasenko.cc;
 	access_log /var/log/nginx/access_main.log;
 
@@ -45,7 +44,7 @@ server {
 }
 
 server {
-	listen 127.0.0.1:80;
+	listen 0.0.0.0:80;
 	server_name andrey.vlasenko.cc;
 
 	access_log /var/log/nginx/access_andrey.log;
@@ -96,7 +95,7 @@ server {
 }
 
 server {
-	listen 127.0.0.1:80;
+	listen 0.0.0.0:80;
 	server_name polina.vlasenko.cc;
 
 	access_log /var/log/nginx/access_polina.log;
