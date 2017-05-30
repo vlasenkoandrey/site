@@ -4,7 +4,7 @@ echo "Vlasenko site Docker helper script"
 
 
 IMAGE_NAME=vlasenkosite2
-CONTAINER_NAME=vlasenkosite2
+CONTAINER_NAME=vlass
 PORTS="-p 80:80  -p 8080:8080"
 #можно дебаг порты добавить
 
@@ -12,7 +12,7 @@ PORTS="-p 80:80  -p 8080:8080"
 CMD="$1"
 case "$CMD" in
     build-image)
-        CONTAINERS=$(docker ps | grep 'vlasenkosite2' | awk '{print $1}')
+        CONTAINERS=$(docker ps | grep 'vlasss' | awk '{print $1}')
         if [[ "$CONTAINERS" == "" ]]; then
             echo "No containers running"
         else
@@ -29,6 +29,7 @@ case "$CMD" in
 
     run-image)
         docker run  --name $CONTAINER_NAME $PORTS -d $IMAGE_NAME
+        #docker run -i -t $IMAGE_NAME
     ;;
 
     bash)

@@ -20,8 +20,6 @@ case "$CMD" in
             docker stop $CONTAINERS
             docker rm $CONTAINERS
         fi
-        #IMAGE=$(docker images | grep 'vlasenkosite1' | awk '{print $1}')
-        #docker rmi $IMAGE
         docker build .  --no-cache -t $IMAGE_NAME
         echo "Done"
     ;;

@@ -30,7 +30,7 @@ RUN mkdir /opt/projects
 RUN git clone https://polinarodimova:Polina303256353@github.com/vlasenkoandrey/site.git /opt/projects/vlasenkosite
 RUN cd /opt/projects/vlasenkosite && git checkout origin/xorda
 RUN cp /opt/projects/vlasenkosite/docker/nginx_default /etc/nginx/sites-enabled/default
-RUN echo "STEP 03 finished - projects vlasenkosite cloned"
+RUN echo "STEP 02 finished - projects vlasenkosite cloned"
 
 
 
