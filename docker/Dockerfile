@@ -31,7 +31,7 @@ RUN git clone https://polinarodimova:Polina303256353@github.com/vlasenkoandrey/s
 RUN cd /opt/projects/vlasenkosite && git checkout origin/xorda
 RUN cp /opt/projects/vlasenkosite/docker/nginx_default /etc/nginx/sites-enabled/default
 
-#todo set up nginx
+ADD entrypoint.sh /
 
 RUN echo "STEP 03 finished - projects vlasenko cloned"
 
