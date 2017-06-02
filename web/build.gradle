@@ -45,7 +45,7 @@ dependencies {
     compile group: 'org.eclipse.jetty', name: 'apache-jsp', version: '9.4.5.v20170502'
 
     compile 'javax.servlet:jsp-api:2.0'
-    compile 'javax.servlet:servlet-api:2.5'
+    //compile 'javax.servlet:servlet-api:2.5'
     runtime 'org.slf4j:slf4j-log4j12:1.7.5'
     runtime 'org.slf4j:slf4j-simple:1.7.5'
     compile 'org.slf4j:slf4j-api:1.7.5'
