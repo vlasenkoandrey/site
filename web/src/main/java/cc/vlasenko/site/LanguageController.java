@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class LanguageController extends LocalisingController {
 
-	@RequestMapping(value = "/language/set")
+	@RequestMapping(value = "/language/set2")
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
-	public String setLanguage(ModelMap modelMap//, @RequestParam("vlanguage") String vlanguage
+	public String setLanguage2(ModelMap modelMap//, @RequestParam("vlanguage") String vlanguage
 							 ) {
 		String vlanguage = null;
 		if (!StringUtils.isEmpty(vlanguage)) {
@@ -20,6 +20,14 @@ public class LanguageController extends LocalisingController {
 		}
 		return  (String) modelMap.get("vlanguage");
 	}
+
+	@RequestMapping(value = "/language/set")
+	@ResponseStatus(value = HttpStatus.OK)
+	@ResponseBody
+	public String setLanguage(ModelMap modelMap) {
+		return  (String) modelMap.get("vlanguage");
+	}
+
 
 	@RequestMapping(value = "/language/get")
 	@ResponseStatus(value = HttpStatus.OK)
