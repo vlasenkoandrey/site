@@ -4,12 +4,11 @@ function setLanguage() {
     location.reload();
 }
 
-function detectLanguage() {
+function loadLanguage(changeSelect) {
     var boxValue = null;
     $.get('lang/get', function (result) {
                 boxValue = result;
                 if (boxValue != 'en' && boxValue != 'ru') {
-                    //first load
                     boxValue = 'en';
                     var userLang = navigator.language || navigator.userLanguage;
                     if (userLang != null && userLang.match(/.*en.*/)) {
@@ -19,14 +18,13 @@ function detectLanguage() {
                     }
                     $.post('lang/set', {vlanguage: languageSelect });
                 }
+                if(changeSelect){
+                    changeSelectField(boxValue);
+                }
      })
-
-     return boxValue;
-
 }
 
-function loadLanguage() {
-        var boxValue = detectLanguage();
+function changeSelectField(boxValue) {
         var curValue = $("select#selectedLanguage").val();
         if(boxValue && boxValue != curValue ) {
             $("select#selectedLanguage").val(boxValue);

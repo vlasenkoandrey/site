@@ -36,9 +36,9 @@
     <script src="../resources/js/language.js"></script>
     <script src="../resources/js/layout.js"></script>
     <script type="text/javascript">
-    detectLanguage();
+    loadLanguage(false);
         $(document).ready(function() {
-            loadLanguage();
+            loadLanguage(true);
             $('#fullpage').fullpage({
                 anchors: ['pageWeAre', 'pageTheStory', 'pageTravelling', 'pageGallery', 'pageJob'],
                 verticalCentered: true,
