@@ -28,6 +28,5 @@ function changeSelectField(boxValue) {
         var curValue = $("select#selectedLanguage").val();
         if(boxValue && boxValue != curValue ) {
             $("select#selectedLanguage").val(boxValue);
-            location.reload();
         }
 }
