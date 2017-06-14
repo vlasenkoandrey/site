@@ -5,7 +5,7 @@ echo "Vlasenko site Docker helper script"
 
 IMAGE_NAME=vlasenkosite2
 CONTAINER_NAME=vlasss
-PORTS=" -p 80:80  -p 8080:8080"
+PORTS=" -p 80:80  -p 8080:8080 -p 4000:4000"
 #можно дебаг порты добавить
 
 

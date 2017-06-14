@@ -4,10 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class LanguageController extends LocalisingController {
@@ -20,7 +17,7 @@ public class LanguageController extends LocalisingController {
 		}
 	}
 
-	@RequestMapping("/language/get")
+	@RequestMapping(value = "/language/get", method = RequestMethod.POST)
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
 	public String getLanguage(ModelMap modelMap) {
