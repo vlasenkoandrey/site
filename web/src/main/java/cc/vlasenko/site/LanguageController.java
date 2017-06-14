@@ -7,6 +7,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
+@RequestMapping(value = "/language")
 public class LanguageController extends LocalisingController {
 
 	@RequestMapping(value = "/language/set2")
@@ -21,7 +22,7 @@ public class LanguageController extends LocalisingController {
 		return  (String) modelMap.get("vlanguage");
 	}
 
-	@RequestMapping(value = "/language/set")
+	@RequestMapping(value = "/uuu")
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
 	public String setLanguage(ModelMap modelMap) {
@@ -29,7 +30,7 @@ public class LanguageController extends LocalisingController {
 	}
 
 
-	@RequestMapping(value = "/language/get")
+	@RequestMapping(value = "/get")
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
 	public String getLanguage(ModelMap modelMap) {
