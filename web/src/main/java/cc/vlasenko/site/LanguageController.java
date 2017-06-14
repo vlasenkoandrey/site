@@ -11,6 +11,7 @@ public class LanguageController extends LocalisingController {
 
 	@RequestMapping(value = "/language/set")
 	@ResponseStatus(value = HttpStatus.OK)
+	@ResponseBody
 	public String setLanguage(ModelMap modelMap//, @RequestParam("vlanguage") String vlanguage
 							 ) {
 		String vlanguage = null;
