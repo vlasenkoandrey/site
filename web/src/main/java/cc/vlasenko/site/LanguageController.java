@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class LanguageController extends LocalisingController {
 
-	@RequestMapping(value = "/language/set", method = RequestMethod.POST)
+	@RequestMapping(value = "/language/set")
 	@ResponseStatus(value = HttpStatus.OK)
-	public void setLanguage(ModelMap modelMap, @RequestParam("vlanguage") String vlanguage) {
+	public void setLanguage(ModelMap modelMap,// @RequestParam("vlanguage")
+			String vlanguage) {
 		if (!StringUtils.isEmpty(vlanguage)) {
 			modelMap.addAttribute("vlanguage", vlanguage);
 		}

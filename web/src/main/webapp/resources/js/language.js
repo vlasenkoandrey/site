@@ -6,7 +6,7 @@ function setLanguage() {
 
 function detectLanguage() {
     var boxValue = null;
-    $.post('language/get', function (result) {
+    $.get('language/get', function (result) {
                 boxValue = result;
                 if (boxValue != 'en' && boxValue != 'ru') {
                     //first load
@@ -27,8 +27,9 @@ function detectLanguage() {
 
 function loadLanguage() {
         var boxValue = detectLanguage();
-        if(boxValue) {
+        var curValue = $("select#selectedLanguage").val();
+        if(boxValue && boxValue != curValue ) {
             $("select#selectedLanguage").val(boxValue);
+            location.reload();
         }
-        location.reload();
 }
