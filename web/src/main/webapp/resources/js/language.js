@@ -18,8 +18,8 @@ function detectLanguage() {
                         boxValue = 'ru'
                     }
                     $.post('language/set', {vlanguage: boxValue});
-                    }
-     }
+                }
+     })
 
      return boxValue;
 
