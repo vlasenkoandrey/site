@@ -17,7 +17,7 @@ function detectLanguage() {
                     } else if (userLang != null && userLang.match(/.*ru.*/)) {
                         boxValue = 'ru'
                     }
-                    $.post('language/set', {vlanguage: boxValue});
+                    $.get('language/set');
                 }
      })
 
