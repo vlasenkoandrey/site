@@ -1,12 +1,12 @@
 function setLanguage() {
     var languageSelect = document.getElementById('selectedLanguage').value;
- //   $.post('language/set', {vlanguage: languageSelect });
-   // location.reload();
+    $.post('lang/set', {vlanguage: languageSelect });
+    location.reload();
 }
 
 function detectLanguage() {
     var boxValue = null;
-    $.get('language/get', function (result) {
+    $.get('lang/get', function (result) {
                 boxValue = result;
                 if (boxValue != 'en' && boxValue != 'ru') {
                     //first load
@@ -17,7 +17,7 @@ function detectLanguage() {
                     } else if (userLang != null && userLang.match(/.*ru.*/)) {
                         boxValue = 'ru'
                     }
-                    $.post('language/uuu');
+                    $.post('lang/set', {vlanguage: languageSelect });
                 }
      })
 

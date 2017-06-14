@@ -7,25 +7,16 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(value = "/language")
+@RequestMapping(value = "/lang")
 public class LanguageController extends LocalisingController {
 
-	@RequestMapping(value = "/language/set2")
+	@RequestMapping(value = "/set", method = RequestMethod.POST)
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
-	public String setLanguage2(ModelMap modelMap//, @RequestParam("vlanguage") String vlanguage
-							 ) {
-		String vlanguage = null;
+	public String setLanguage(ModelMap modelMap, @RequestParam("vlanguage") String vlanguage) {
 		if (!StringUtils.isEmpty(vlanguage)) {
 			modelMap.addAttribute("vlanguage", vlanguage);
 		}
-		return  (String) modelMap.get("vlanguage");
-	}
-
-	@RequestMapping(value = "/uuu")
-	@ResponseStatus(value = HttpStatus.OK)
-	@ResponseBody
-	public String setLanguage(ModelMap modelMap) {
 		return  (String) modelMap.get("vlanguage");
 	}
 
