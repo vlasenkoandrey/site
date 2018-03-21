@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:map id="austriaEntry">
+        <entry key="ru">
+            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                <constructor-arg index="0" ref="austria"/>
+                <constructor-arg index="1" value="ru/"/>
+                <constructor-arg index="2" value="gallery/austria/"/>
+            </bean>
+        </entry>
+        <entry key="en">
+            <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
+                <constructor-arg index="0" ref="austria"/>
+                <constructor-arg index="1" value="en/"/>
+                <constructor-arg index="2" value="gallery/austria/"/>
+            </bean>
+        </entry>
+    </util:map>
+
+    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="austria">
+        <property name="videos">
+            <array>
+                <value>https://youtu.be/p6iPpcW-DHE</value>
+            </array>
+        </property>
+        <property name="path" value="/static/img/gallery/austria/"/>
+        <property name="imageCount" value="1"/>
+        <property name="text" value="austria.txt"/>
+    </bean>
+
+</beans>

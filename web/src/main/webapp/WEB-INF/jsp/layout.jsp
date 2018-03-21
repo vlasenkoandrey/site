@@ -81,6 +81,14 @@
             <div id="albumsSet"  style="margin-left: 40px; margin-right: 40px">
             </div>
         </div>
+        <div class="slide" id="slideMaldives">
+            <div id="galleryMaldives" style="margin-top: -15vh">
+            </div>
+        </div>
+        <div class="slide" id="slideAustria">
+            <div id="galleryAustria" style="margin-top: -15vh">
+            </div>
+        </div>
         <div class="slide" id="slideAmsterdam">
             <div id="galleryAmsterdam" style="margin-top: -15vh">
             </div>

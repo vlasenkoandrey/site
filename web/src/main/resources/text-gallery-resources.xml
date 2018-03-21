@@ -7,6 +7,8 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
 
+    <import resource="gallery/austria-resources.xml"/>
+    <import resource="gallery/maldives-resources.xml"/>
     <import resource="gallery/andorra-resources.xml"/>
     <import resource="gallery/balising-resources.xml"/>
     <import resource="gallery/boats-resources.xml"/>
@@ -46,6 +48,8 @@
                         </entry>
                     </util:map>
                 </entry>
+                <entry key="MALDIVES" value-ref="maldivesEntry"/>
+                <entry key="AUSTRIA" value-ref="austriaEntry"/>
                 <entry key="AMSTERDAM" value-ref="amsterdamEntry"/>
                 <entry key="PHILIPPINS" value-ref="philippinsEntry"/>
                 <entry key="FRANCE" value-ref="franceEntry"/>

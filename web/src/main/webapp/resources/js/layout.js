@@ -146,6 +146,22 @@ $(document).ready(function() {
         }
     });
 
+    $('#slideAustria').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView) {
+            $('#galleryAustria').load("tgaustria.jsp", function() {
+                $(window).resize();
+            });
+        }
+    });
+
+    $('#slideMaldives').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView) {
+            $('#galleryMaldives').load("tgmaldives.jsp", function() {
+                $(window).resize();
+            });
+        }
+    });
+
     $('#sectionJob').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
         if (isInView) {
             $('#jobDiv').load("job.jsp", function() {
