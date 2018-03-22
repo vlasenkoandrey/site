@@ -28,7 +28,7 @@ case "$CMD" in
 
 
     run-image)
-        docker run  --name $CONTAINER_NAME $PORTS -d $IMAGE_NAME
+        docker run  -v /home/ubuntu/vlasenkosite:/vlasenko --name $CONTAINER_NAME $PORTS -d $IMAGE_NAME
         #docker run --name $CONTAINER_NAME  -p 80:80 -p 8080:8080 -i -t vlasenkosite2
     ;;
 

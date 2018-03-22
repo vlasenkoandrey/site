@@ -7,32 +7,32 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <util:map id="maldivesEntry">
+    <util:map id="italy2017Entry">
         <entry key="ru">
             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
-                <constructor-arg index="0" ref="maldives"/>
+                <constructor-arg index="0" ref="italy2017"/>
                 <constructor-arg index="1" value="ru/"/>
-                <constructor-arg index="2" value="gallery/maldives/"/>
+                <constructor-arg index="2" value="gallery/italy2017/"/>
             </bean>
         </entry>
         <entry key="en">
             <bean class="cc.vlasenko.site.TextGalleryResourceContainer">
-                <constructor-arg index="0" ref="maldives"/>
+                <constructor-arg index="0" ref="italy2017"/>
                 <constructor-arg index="1" value="en/"/>
-                <constructor-arg index="2" value="gallery/maldives/"/>
+                <constructor-arg index="2" value="gallery/italy2017/"/>
             </bean>
         </entry>
     </util:map>
 
-    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="maldives">
+    <bean class="cc.vlasenko.site.model.TextGalleryResourceBean" id="italy2017">
         <property name="videos">
             <array>
-                <value>https://youtu.be/jvwfM6k-CW8</value>
+                <value>https://youtu.be/tZQ9fDlzzIE</value>
             </array>
         </property>
-        <property name="path" value="/static/img/gallery/maldives/"/>
-        <property name="imageCount" value="25"/>
-        <property name="text" value="maldives.txt"/>
+        <property name="path" value="/static/img/gallery/italy2017/"/>
+        <property name="imageCount" value="1"/>
+        <property name="text" value="italy2017.txt"/>
     </bean>
 
 </beans>

@@ -89,6 +89,10 @@
             <div id="galleryAustria" style="margin-top: -15vh">
             </div>
         </div>
+        <div class="slide" id="slideItaly2017">
+            <div id="galleryItaly2017" style="margin-top: -15vh">
+            </div>
+        </div>
         <div class="slide" id="slideAmsterdam">
             <div id="galleryAmsterdam" style="margin-top: -15vh">
             </div>

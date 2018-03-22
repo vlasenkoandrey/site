@@ -146,6 +146,14 @@ $(document).ready(function() {
         }
     });
 
+    $('#slideItaly2017').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (isInView) {
+            $('#galleryItaly2017').load("tgitaly2017.jsp", function() {
+                $(window).resize();
+            });
+        }
+    });
+
     $('#slideAustria').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
         if (isInView) {
             $('#galleryAustria').load("tgaustria.jsp", function() {
